@@ -1,0 +1,4002 @@
+[
+  {
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "genre": "Drame",
+    "description": "Un banquier condamné à tort se lie d'amitié avec un détenu de longue date et trouve rédemption à travers des actes de décence.",
+    "poster": "https://picsum.photos/seed/shawshank/320/480",
+    "rating": 8.7
+  },
+  {
+    "title": "The Godfather",
+    "year": 1972,
+    "genre": "Crime",
+    "description": "Le patriarche vieillissant d'une dynastie du crime organisé transfère le contrôle de son empire clandestin à son fils réticent.",
+    "poster": "https://picsum.photos/seed/godfather/320/480",
+    "rating": 8.7
+  },
+  {
+    "title": "The Dark Knight",
+    "year": 2008,
+    "genre": "Action",
+    "description": "Batman affronte le Joker, un criminel anarchiste qui plonge Gotham dans le chaos.",
+    "poster": "https://picsum.photos/seed/darkknight/320/480",
+    "rating": 8.5
+  },
+  {
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "genre": "Crime",
+    "description": "Les vies de deux tueurs à gages, d'un boxeur et d'un couple de braqueurs s'entrelacent dans quatre histoires de violence et de rédemption.",
+    "poster": "https://picsum.photos/seed/pulpfiction/320/480",
+    "rating": 8.5
+  },
+  {
+    "title": "Schindler's List",
+    "year": 1993,
+    "genre": "Drame",
+    "description": "En Pologne occupée, un industriel allemand sauve la vie de plus de mille réfugiés juifs pendant l'Holocauste.",
+    "poster": "https://picsum.photos/seed/schindler/320/480",
+    "rating": 8.6
+  },
+  {
+    "title": "Fight Club",
+    "year": 1999,
+    "genre": "Drame",
+    "description": "Un employé de bureau insomniaque et un fabricant de savon forment un club de combat clandestin qui évolue en quelque chose de bien plus grand.",
+    "poster": "https://picsum.photos/seed/fightclub/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "Forrest Gump",
+    "year": 1994,
+    "genre": "Drame",
+    "description": "L'histoire d'un homme simple d'esprit dont la vie croise involontairement les grands moments de l'histoire américaine.",
+    "poster": "https://picsum.photos/seed/forrestgump/320/480",
+    "rating": 8.5
+  },
+  {
+    "title": "Inception",
+    "year": 2010,
+    "genre": "Science-Fiction",
+    "description": "Un voleur spécialisé dans l'extraction de secrets enfouis dans le subconscient accepte une dernière mission impossible.",
+    "poster": "https://picsum.photos/seed/inception/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "genre": "Science-Fiction",
+    "description": "Un hacker découvre que la réalité telle qu'il la connaît est une simulation créée par des machines.",
+    "poster": "https://picsum.photos/seed/matrix/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "Goodfellas",
+    "year": 1990,
+    "genre": "Crime",
+    "description": "L'histoire de Henry Hill et de sa vie au sein de la mafia, couvrant sa relation avec sa femme et ses partenaires criminels.",
+    "poster": "https://picsum.photos/seed/goodfellas/320/480",
+    "rating": 8.5
+  },
+  {
+    "title": "Interstellar",
+    "year": 2014,
+    "genre": "Science-Fiction",
+    "description": "Des explorateurs traversent un trou de ver pour chercher une nouvelle planète habitable alors que la Terre se meurt.",
+    "poster": "https://picsum.photos/seed/interstellar/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "year": 1991,
+    "genre": "Thriller",
+    "description": "Une jeune agent du FBI demande l'aide d'un psychiatre cannibale emprisonné pour attraper un autre tueur en série.",
+    "poster": "https://picsum.photos/seed/silencelambs/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "Se7en",
+    "year": 1995,
+    "genre": "Thriller",
+    "description": "Deux détectives traquent un tueur en série qui utilise les sept péchés capitaux comme motifs.",
+    "poster": "https://picsum.photos/seed/se7en/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "The Usual Suspects",
+    "year": 1995,
+    "genre": "Crime",
+    "description": "Un escroc raconte l'histoire complexe d'un braquage orchestré par le mystérieux Keyser Söze.",
+    "poster": "https://picsum.photos/seed/usualsuspects/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "Spirited Away",
+    "year": 2001,
+    "genre": "Animation",
+    "description": "Une fillette piégée dans un monde spirituel doit travailler dans un établissement de bains pour libérer ses parents.",
+    "poster": "https://picsum.photos/seed/spiritedaway/320/480",
+    "rating": 8.6
+  },
+  {
+    "title": "Parasite",
+    "year": 2019,
+    "genre": "Thriller",
+    "description": "Une famille pauvre s'infiltre dans la vie d'une famille riche jusqu'à ce qu'un incident déclenche le chaos.",
+    "poster": "https://picsum.photos/seed/parasite/320/480",
+    "rating": 8.5
+  },
+  {
+    "title": "Whiplash",
+    "year": 2014,
+    "genre": "Drame",
+    "description": "Un jeune batteur de jazz est poussé au-delà de ses limites par un instructeur tyrannique.",
+    "poster": "https://picsum.photos/seed/whiplash/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "genre": "Fantaisie",
+    "description": "Un jeune hobbit doit détruire un anneau maléfique en le portant jusqu'au cœur du territoire ennemi.",
+    "poster": "https://picsum.photos/seed/lotr1/320/480",
+    "rating": 8.8
+  },
+  {
+    "title": "The Lord of the Rings: The Two Towers",
+    "year": 2002,
+    "genre": "Fantaisie",
+    "description": "La communauté est brisée, et ses membres affrontent de nouveaux défis alors que Sauron déploie ses armées.",
+    "poster": "https://picsum.photos/seed/lotr2/320/480",
+    "rating": 8.6
+  },
+  {
+    "title": "The Lord of the Rings: The Return of the King",
+    "year": 2003,
+    "genre": "Fantaisie",
+    "description": "La bataille finale pour la Terre du Milieu commence alors que Frodon approche de la Montagne du Destin.",
+    "poster": "https://picsum.photos/seed/lotr3/320/480",
+    "rating": 8.9
+  },
+  {
+    "title": "Star Wars: A New Hope",
+    "year": 1977,
+    "genre": "Science-Fiction",
+    "description": "Un jeune fermier rejoint une rébellion contre un empire galactique tyrannique.",
+    "poster": "https://picsum.photos/seed/starwars4/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "Star Wars: The Empire Strikes Back",
+    "year": 1980,
+    "genre": "Science-Fiction",
+    "description": "Les rebelles sont traqués par l'Empire tandis que Luke s'entraîne auprès du maître Jedi Yoda.",
+    "poster": "https://picsum.photos/seed/starwars5/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "Alien",
+    "year": 1979,
+    "genre": "Horreur",
+    "description": "L'équipage d'un vaisseau spatial commercial fait face à une créature extraterrestre mortelle.",
+    "poster": "https://picsum.photos/seed/alien1979/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Aliens",
+    "year": 1986,
+    "genre": "Action",
+    "description": "Ripley retourne sur la planète infestée d'aliens avec une unité de marines spatiaux.",
+    "poster": "https://picsum.photos/seed/aliens1986/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Blade Runner",
+    "year": 1982,
+    "genre": "Science-Fiction",
+    "description": "Un chasseur de primes traque des réplicants fugitifs dans un Los Angeles dystopique.",
+    "poster": "https://picsum.photos/seed/bladerunner/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Blade Runner 2049",
+    "year": 2017,
+    "genre": "Science-Fiction",
+    "description": "Un nouveau blade runner découvre un secret enfoui qui pourrait plonger la société dans le chaos.",
+    "poster": "https://picsum.photos/seed/bladerunner2049/320/480",
+    "rating": 6.8
+  },
+  {
+    "title": "2001: A Space Odyssey",
+    "year": 1968,
+    "genre": "Science-Fiction",
+    "description": "L'humanité trouve un artefact mystérieux sur la Lune et envoie une expédition vers Jupiter avec l'IA HAL 9000.",
+    "poster": "https://picsum.photos/seed/2001space/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "A Clockwork Orange",
+    "year": 1971,
+    "genre": "Science-Fiction",
+    "description": "Dans une Grande-Bretagne futuriste, un jeune délinquant subit un traitement expérimental contre la violence.",
+    "poster": "https://picsum.photos/seed/clockworkorange/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "The Shining",
+    "year": 1980,
+    "genre": "Horreur",
+    "description": "Un écrivain devient gardien d'un hôtel isolé et sombre progressivement dans la folie.",
+    "poster": "https://picsum.photos/seed/theshining/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "Psycho",
+    "year": 1960,
+    "genre": "Horreur",
+    "description": "Une secrétaire en fuite s'arrête dans un motel isolé tenu par un jeune homme perturbé.",
+    "poster": "https://picsum.photos/seed/psycho/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "Taxi Driver",
+    "year": 1976,
+    "genre": "Drame",
+    "description": "Un vétéran du Vietnam devenu chauffeur de taxi à New York sombre dans la paranoïa et la violence.",
+    "poster": "https://picsum.photos/seed/taxidriver/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Apocalypse Now",
+    "year": 1979,
+    "genre": "Guerre",
+    "description": "Pendant la guerre du Vietnam, un capitaine reçoit la mission d'éliminer un colonel devenu fou.",
+    "poster": "https://picsum.photos/seed/apocalypsenow/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "Saving Private Ryan",
+    "year": 1998,
+    "genre": "Guerre",
+    "description": "Après le débarquement en Normandie, un groupe de soldats part à la recherche d'un parachutiste dont les frères sont morts au combat.",
+    "poster": "https://picsum.photos/seed/savingprivateryan/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "Gladiator",
+    "year": 2000,
+    "genre": "Action",
+    "description": "Un général romain trahi est réduit en esclavage et devient gladiateur pour se venger de l'empereur corrompu.",
+    "poster": "https://picsum.photos/seed/gladiator/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "The Departed",
+    "year": 2006,
+    "genre": "Crime",
+    "description": "Une taupe infiltrée dans la police et un policier infiltré dans la mafia tentent de se démasquer mutuellement.",
+    "poster": "https://picsum.photos/seed/departed/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "No Country for Old Men",
+    "year": 2007,
+    "genre": "Thriller",
+    "description": "Un chasseur trouve deux millions de dollars et se retrouve poursuivi par un tueur implacable.",
+    "poster": "https://picsum.photos/seed/nocountry/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "There Will Be Blood",
+    "year": 2007,
+    "genre": "Drame",
+    "description": "Un prospecteur de pétrole impitoyable bâtit un empire au prix de son humanité.",
+    "poster": "https://picsum.photos/seed/therewillbeblood/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "year": 2004,
+    "genre": "Romance",
+    "description": "Un couple qui se sépare découvre qu'une procédure peut effacer les souvenirs de leur relation.",
+    "poster": "https://picsum.photos/seed/eternalsunshine/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Memento",
+    "year": 2000,
+    "genre": "Thriller",
+    "description": "Un homme souffrant de perte de mémoire à court terme traque le meurtrier de sa femme à l'aide de tatouages et de notes.",
+    "poster": "https://picsum.photos/seed/memento/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "The Prestige",
+    "year": 2006,
+    "genre": "Thriller",
+    "description": "Deux magiciens rivaux s'engagent dans une bataille d'illusions de plus en plus dangereuse.",
+    "poster": "https://picsum.photos/seed/prestige/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "Django Unchained",
+    "year": 2012,
+    "genre": "Western",
+    "description": "Un esclave affranchi part à la recherche de sa femme avec l'aide d'un chasseur de primes.",
+    "poster": "https://picsum.photos/seed/django/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Inglourious Basterds",
+    "year": 2009,
+    "genre": "Guerre",
+    "description": "Un commando juif-américain planifie un attentat contre les dirigeants nazis dans la France occupée.",
+    "poster": "https://picsum.photos/seed/basterds/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "Kill Bill: Volume 1",
+    "year": 2003,
+    "genre": "Action",
+    "description": "Une ancienne tueuse à gages se réveille du coma et part en quête de vengeance contre ses anciens alliés.",
+    "poster": "https://picsum.photos/seed/killbill1/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Kill Bill: Volume 2",
+    "year": 2004,
+    "genre": "Action",
+    "description": "La Mariée poursuit sa vengeance et affronte finalement Bill.",
+    "poster": "https://picsum.photos/seed/killbill2/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Mad Max: Fury Road",
+    "year": 2015,
+    "genre": "Action",
+    "description": "Dans un désert post-apocalyptique, une rebelle s'allie à un prisonnier pour fuir un tyran.",
+    "poster": "https://picsum.photos/seed/madmaxfury/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "The Truman Show",
+    "year": 1998,
+    "genre": "Drame",
+    "description": "Un homme découvre que toute sa vie est une émission de téléréalité diffusée en direct.",
+    "poster": "https://picsum.photos/seed/trumanshow/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "The Green Mile",
+    "year": 1999,
+    "genre": "Drame",
+    "description": "Un gardien de prison découvre qu'un détenu condamné à mort possède un don surnaturel de guérison.",
+    "poster": "https://picsum.photos/seed/greenmile/320/480",
+    "rating": 8.5
+  },
+  {
+    "title": "Schindler's List",
+    "year": 1993,
+    "genre": "Drame",
+    "description": "Un industriel allemand sauve plus de mille Juifs pendant l'Holocauste en les employant dans ses usines.",
+    "poster": "https://picsum.photos/seed/schindlerslist/320/480",
+    "rating": 8.6
+  },
+  {
+    "title": "Léon: The Professional",
+    "year": 1994,
+    "genre": "Action",
+    "description": "Un tueur à gages solitaire prend sous son aile une fillette dont la famille a été massacrée.",
+    "poster": "https://picsum.photos/seed/leon/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "The Pianist",
+    "year": 2002,
+    "genre": "Drame",
+    "description": "Un pianiste juif polonais survit à l'occupation de Varsovie pendant la Seconde Guerre mondiale.",
+    "poster": "https://picsum.photos/seed/pianist/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "American Beauty",
+    "year": 1999,
+    "genre": "Drame",
+    "description": "Un père de famille en crise remet en question toute son existence dans la banlieue américaine.",
+    "poster": "https://picsum.photos/seed/americanbeauty/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "Requiem for a Dream",
+    "year": 2000,
+    "genre": "Drame",
+    "description": "Quatre personnes voient leurs rêves dévorés par la dépendance aux drogues.",
+    "poster": "https://picsum.photos/seed/requiem/320/480",
+    "rating": 6.8
+  },
+  {
+    "title": "City of God",
+    "year": 2002,
+    "genre": "Crime",
+    "description": "Dans les favelas de Rio, deux garçons grandissent en choisissant des chemins opposés : la photographie et le crime.",
+    "poster": "https://picsum.photos/seed/cityofgod/320/480",
+    "rating": 8.5
+  },
+  {
+    "title": "Oldboy",
+    "year": 2003,
+    "genre": "Thriller",
+    "description": "Un homme est emprisonné pendant 15 ans sans explication puis libéré pour découvrir pourquoi.",
+    "poster": "https://picsum.photos/seed/oldboy/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "Amélie",
+    "year": 2001,
+    "genre": "Romance",
+    "description": "Une serveuse parisienne décide secrètement d'améliorer la vie des gens autour d'elle.",
+    "poster": "https://picsum.photos/seed/amelie/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "La Haine",
+    "year": 1995,
+    "genre": "Drame",
+    "description": "Vingt-quatre heures dans la vie de trois jeunes de banlieue après une nuit d'émeutes.",
+    "poster": "https://picsum.photos/seed/lahaine/320/480",
+    "rating": 7.5
+  },
+  {
+    "title": "Cinema Paradiso",
+    "year": 1988,
+    "genre": "Drame",
+    "description": "Un cinéaste se souvient de son enfance en Sicile et de sa relation avec le projectionniste du cinéma local.",
+    "poster": "https://picsum.photos/seed/cinemaparadiso/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "Life Is Beautiful",
+    "year": 1997,
+    "genre": "Drame",
+    "description": "Un père juif utilise l'humour pour protéger son fils de l'horreur d'un camp de concentration.",
+    "poster": "https://picsum.photos/seed/lifeisbeautiful/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "The Intouchables",
+    "year": 2011,
+    "genre": "Comédie",
+    "description": "Un aristocrate tétraplégique engage un jeune de banlieue comme aide à domicile, et une amitié improbable naît.",
+    "poster": "https://picsum.photos/seed/intouchables/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "Trainspotting",
+    "year": 1996,
+    "genre": "Drame",
+    "description": "Un jeune Écossais héroïnomane tente de se sortir de la drogue et de son environnement destructeur.",
+    "poster": "https://picsum.photos/seed/trainspotting/320/480",
+    "rating": 6.8
+  },
+  {
+    "title": "Snatch",
+    "year": 2000,
+    "genre": "Crime",
+    "description": "Des histoires de gangsters, boxeurs et voleurs de diamants s'entremêlent dans le Londres underground.",
+    "poster": "https://picsum.photos/seed/snatch/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Lock, Stock and Two Smoking Barrels",
+    "year": 1998,
+    "genre": "Crime",
+    "description": "Quatre amis londoniens perdent un demi-million aux cartes et doivent trouver l'argent en une semaine.",
+    "poster": "https://picsum.photos/seed/lockstock/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Reservoir Dogs",
+    "year": 1992,
+    "genre": "Crime",
+    "description": "Après un braquage raté, les survivants suspectent qu'un traître se cache parmi eux.",
+    "poster": "https://picsum.photos/seed/reservoirdogs/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Scarface",
+    "year": 1983,
+    "genre": "Crime",
+    "description": "Un réfugié cubain gravit les échelons du trafic de cocaïne à Miami dans les années 80.",
+    "poster": "https://picsum.photos/seed/scarface/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "The Godfather Part II",
+    "year": 1974,
+    "genre": "Crime",
+    "description": "La jeunesse de Vito Corleone s'entrelace avec la montée en puissance et la chute morale de son fils Michael.",
+    "poster": "https://picsum.photos/seed/godfather2/320/480",
+    "rating": 8.6
+  },
+  {
+    "title": "Casino",
+    "year": 1995,
+    "genre": "Crime",
+    "description": "Un as du jeu gère un casino de Las Vegas pour la mafia, mais sa vie se désintègre.",
+    "poster": "https://picsum.photos/seed/casino/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Heat",
+    "year": 1995,
+    "genre": "Crime",
+    "description": "Un braqueur méthodique et un détective obsessionnel se rapprochent d'un affrontement final.",
+    "poster": "https://picsum.photos/seed/heat/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "The Big Lebowski",
+    "year": 1998,
+    "genre": "Comédie",
+    "description": "Un fainéant passionné de bowling est confondu avec un millionnaire et se retrouve mêlé à une histoire d'enlèvement.",
+    "poster": "https://picsum.photos/seed/biglebowski/320/480",
+    "rating": 6.8
+  },
+  {
+    "title": "Fargo",
+    "year": 1996,
+    "genre": "Crime",
+    "description": "Un vendeur de voitures organise l'enlèvement de sa propre femme, mais tout dérape.",
+    "poster": "https://picsum.photos/seed/fargo/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "Zodiac",
+    "year": 2007,
+    "genre": "Thriller",
+    "description": "Un dessinateur de presse devient obsédé par la traque du tueur du Zodiaque.",
+    "poster": "https://picsum.photos/seed/zodiac/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "Prisoners",
+    "year": 2013,
+    "genre": "Thriller",
+    "description": "Un père désespéré prend les choses en main quand sa fille est kidnappée et la police piétine.",
+    "poster": "https://picsum.photos/seed/prisoners/320/480",
+    "rating": 7.3
+  },
+  {
+    "title": "Gone Girl",
+    "year": 2014,
+    "genre": "Thriller",
+    "description": "Quand sa femme disparaît, un mari devient le suspect principal d'un jeu de manipulation médiatique.",
+    "poster": "https://picsum.photos/seed/gonegirl/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "Shutter Island",
+    "year": 2010,
+    "genre": "Thriller",
+    "description": "Un marshal enquête sur la disparition d'une patiente dans un hôpital psychiatrique sur une île isolée.",
+    "poster": "https://picsum.photos/seed/shutterisland/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Black Swan",
+    "year": 2010,
+    "genre": "Thriller",
+    "description": "Une danseuse de ballet sombre dans la folie alors qu'elle prépare le rôle de sa vie.",
+    "poster": "https://picsum.photos/seed/blackswan/320/480",
+    "rating": 7.3
+  },
+  {
+    "title": "The Sixth Sense",
+    "year": 1999,
+    "genre": "Thriller",
+    "description": "Un psychologue aide un garçon qui prétend voir des personnes mortes.",
+    "poster": "https://picsum.photos/seed/sixthsense/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Donnie Darko",
+    "year": 2001,
+    "genre": "Science-Fiction",
+    "description": "Un adolescent troublé a des visions d'un lapin géant qui lui prédit la fin du monde.",
+    "poster": "https://picsum.photos/seed/donniedarko/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "12 Angry Men",
+    "year": 1957,
+    "genre": "Drame",
+    "description": "Un juré convainc les onze autres de reconsidérer un verdict de culpabilité apparemment évident.",
+    "poster": "https://picsum.photos/seed/12angrymen/320/480",
+    "rating": 8.9
+  },
+  {
+    "title": "One Flew Over the Cuckoo's Nest",
+    "year": 1975,
+    "genre": "Drame",
+    "description": "Un criminel feignant la folie défie l'autorité tyrannique d'une infirmière dans un hôpital psychiatrique.",
+    "poster": "https://picsum.photos/seed/cuckoosnest/320/480",
+    "rating": 8.6
+  },
+  {
+    "title": "The Apartment",
+    "year": 1960,
+    "genre": "Comédie",
+    "description": "Un employé prête son appartement à ses supérieurs pour leurs aventures extraconjugales afin d'obtenir une promotion.",
+    "poster": "https://picsum.photos/seed/theapartment/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Some Like It Hot",
+    "year": 1959,
+    "genre": "Comédie",
+    "description": "Deux musiciens témoins d'un massacre se déguisent en femmes et rejoignent un orchestre féminin.",
+    "poster": "https://picsum.photos/seed/somelikeithot/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Casablanca",
+    "year": 1942,
+    "genre": "Romance",
+    "description": "Un expatrié américain retrouve son ancienne amante dans son bar à Casablanca pendant la Seconde Guerre mondiale.",
+    "poster": "https://picsum.photos/seed/casablanca/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "Citizen Kane",
+    "year": 1941,
+    "genre": "Drame",
+    "description": "La vie d'un magnat de la presse est racontée à travers les souvenirs de ceux qui l'ont connu.",
+    "poster": "https://picsum.photos/seed/citizenkane/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "Vertigo",
+    "year": 1958,
+    "genre": "Thriller",
+    "description": "Un détective souffrant de vertige devient obsédé par une femme qu'il est chargé de surveiller.",
+    "poster": "https://picsum.photos/seed/vertigo/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "Rear Window",
+    "year": 1954,
+    "genre": "Thriller",
+    "description": "Un photographe immobilisé croit avoir été témoin d'un meurtre en observant ses voisins.",
+    "poster": "https://picsum.photos/seed/rearwindow/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "North by Northwest",
+    "year": 1959,
+    "genre": "Thriller",
+    "description": "Un publicitaire est confondu avec un espion et poursuivi à travers les États-Unis.",
+    "poster": "https://picsum.photos/seed/northbynorthwest/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "Sunset Boulevard",
+    "year": 1950,
+    "genre": "Drame",
+    "description": "Un scénariste fauché devient le protégé d'une ancienne star du muet qui rêve d'un retour impossible.",
+    "poster": "https://picsum.photos/seed/sunsetblvd/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "Singin' in the Rain",
+    "year": 1952,
+    "genre": "Comédie",
+    "description": "Hollywood passe du muet au parlant, et un acteur doit s'adapter tout en tombant amoureux.",
+    "poster": "https://picsum.photos/seed/singinintherain/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "It's a Wonderful Life",
+    "year": 1946,
+    "genre": "Drame",
+    "description": "Un homme désespéré découvre grâce à un ange ce que serait le monde s'il n'avait jamais existé.",
+    "poster": "https://picsum.photos/seed/wonderfullife/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "The Wizard of Oz",
+    "year": 1939,
+    "genre": "Fantaisie",
+    "description": "Une jeune fille du Kansas est transportée dans un monde magique et cherche à rentrer chez elle.",
+    "poster": "https://picsum.photos/seed/wizardofoz/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Gone with the Wind",
+    "year": 1939,
+    "genre": "Drame",
+    "description": "Une femme du Sud américain survit à la guerre civile grâce à sa détermination et son charme.",
+    "poster": "https://picsum.photos/seed/gonewiththewind/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "Lawrence of Arabia",
+    "year": 1962,
+    "genre": "Aventure",
+    "description": "Un officier britannique excentrique unit les tribus arabes contre l'Empire ottoman pendant la Première Guerre mondiale.",
+    "poster": "https://picsum.photos/seed/lawrenceofarabia/320/480",
+    "rating": 7.3
+  },
+  {
+    "title": "Ben-Hur",
+    "year": 1959,
+    "genre": "Aventure",
+    "description": "Un prince juif est réduit en esclavage par son ami romain et cherche la vengeance.",
+    "poster": "https://picsum.photos/seed/benhur/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "The Bridge on the River Kwai",
+    "year": 1957,
+    "genre": "Guerre",
+    "description": "Des prisonniers de guerre britanniques sont forcés de construire un pont pour les Japonais en Birmanie.",
+    "poster": "https://picsum.photos/seed/bridgekwai/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Dr. Strangelove",
+    "year": 1964,
+    "genre": "Comédie",
+    "description": "Un général fou déclenche une attaque nucléaire et le président tente désespérément de l'arrêter.",
+    "poster": "https://picsum.photos/seed/drstrangelove/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Jaws",
+    "year": 1975,
+    "genre": "Thriller",
+    "description": "Un grand requin blanc terrorise une station balnéaire, et trois hommes partent le chasser.",
+    "poster": "https://picsum.photos/seed/jaws/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "E.T. the Extra-Terrestrial",
+    "year": 1982,
+    "genre": "Science-Fiction",
+    "description": "Un garçon solitaire se lie d'amitié avec un extraterrestre échoué sur Terre et l'aide à rentrer chez lui.",
+    "poster": "https://picsum.photos/seed/et/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Raiders of the Lost Ark",
+    "year": 1981,
+    "genre": "Aventure",
+    "description": "Un archéologue aventurier cherche l'Arche d'Alliance avant les nazis.",
+    "poster": "https://picsum.photos/seed/raiders/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "Indiana Jones and the Last Crusade",
+    "year": 1989,
+    "genre": "Aventure",
+    "description": "Indiana Jones part à la recherche du Saint Graal tout en sauvant son père des nazis.",
+    "poster": "https://picsum.photos/seed/indyjones3/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "Back to the Future",
+    "year": 1985,
+    "genre": "Science-Fiction",
+    "description": "Un adolescent voyage accidentellement dans le passé et doit s'assurer que ses parents tombent amoureux.",
+    "poster": "https://picsum.photos/seed/backtofuture/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "Back to the Future Part II",
+    "year": 1989,
+    "genre": "Science-Fiction",
+    "description": "Marty voyage dans le futur puis doit corriger les altérations du passé.",
+    "poster": "https://picsum.photos/seed/backtofuture2/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Jurassic Park",
+    "year": 1993,
+    "genre": "Science-Fiction",
+    "description": "Un parc à thème peuplé de dinosaures clonés tourne au cauchemar quand les créatures s'échappent.",
+    "poster": "https://picsum.photos/seed/jurassicpark/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Terminator 2: Judgment Day",
+    "year": 1991,
+    "genre": "Science-Fiction",
+    "description": "Un cyborg reprogrammé protège un jeune garçon contre un Terminator plus avancé venu du futur.",
+    "poster": "https://picsum.photos/seed/terminator2/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "The Terminator",
+    "year": 1984,
+    "genre": "Science-Fiction",
+    "description": "Un cyborg assassin est envoyé du futur pour éliminer la mère du futur leader de la résistance.",
+    "poster": "https://picsum.photos/seed/terminator1/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Die Hard",
+    "year": 1988,
+    "genre": "Action",
+    "description": "Un policier new-yorkais affronte seul des terroristes qui ont pris le contrôle d'un gratte-ciel.",
+    "poster": "https://picsum.photos/seed/diehard/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Predator",
+    "year": 1987,
+    "genre": "Action",
+    "description": "Un commando d'élite en mission dans la jungle est traqué par un chasseur extraterrestre.",
+    "poster": "https://picsum.photos/seed/predator/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "RoboCop",
+    "year": 1987,
+    "genre": "Science-Fiction",
+    "description": "Un policier assassiné est ressuscité en cyborg et lutte pour retrouver son humanité.",
+    "poster": "https://picsum.photos/seed/robocop/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Total Recall",
+    "year": 1990,
+    "genre": "Science-Fiction",
+    "description": "Un ouvrier découvre que ses souvenirs sont implantés et qu'il est en réalité un agent secret sur Mars.",
+    "poster": "https://picsum.photos/seed/totalrecall/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "The Thing",
+    "year": 1982,
+    "genre": "Horreur",
+    "description": "Une équipe de recherche en Antarctique est infiltrée par un organisme extraterrestre qui imite les êtres vivants.",
+    "poster": "https://picsum.photos/seed/thething/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Halloween",
+    "year": 1978,
+    "genre": "Horreur",
+    "description": "Un tueur psychopathe s'échappe d'un asile et traque des adolescentes la nuit d'Halloween.",
+    "poster": "https://picsum.photos/seed/halloween/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "A Nightmare on Elm Street",
+    "year": 1984,
+    "genre": "Horreur",
+    "description": "Un tueur défiguré attaque des adolescents dans leurs rêves, les tuant dans la réalité.",
+    "poster": "https://picsum.photos/seed/elmstreet/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "The Exorcist",
+    "year": 1973,
+    "genre": "Horreur",
+    "description": "Une mère désespérée fait appel à deux prêtres pour exorciser sa fille possédée par un démon.",
+    "poster": "https://picsum.photos/seed/exorcist/320/480",
+    "rating": 7.3
+  },
+  {
+    "title": "Rosemary's Baby",
+    "year": 1968,
+    "genre": "Horreur",
+    "description": "Une jeune femme enceinte soupçonne que ses voisins ont des intentions sinistres pour son bébé.",
+    "poster": "https://picsum.photos/seed/rosemarysbaby/320/480",
+    "rating": 7.3
+  },
+  {
+    "title": "Get Out",
+    "year": 2017,
+    "genre": "Horreur",
+    "description": "Un jeune Afro-Américain découvre un secret terrifiant lors d'une visite chez la famille de sa petite amie blanche.",
+    "poster": "https://picsum.photos/seed/getout/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Hereditary",
+    "year": 2018,
+    "genre": "Horreur",
+    "description": "Après la mort de leur grand-mère, une famille est hantée par des phénomènes de plus en plus terrifiants.",
+    "poster": "https://picsum.photos/seed/hereditary/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Midsommar",
+    "year": 2019,
+    "genre": "Horreur",
+    "description": "Un couple en crise assiste à un festival estival suédois qui se révèle être un culte païen.",
+    "poster": "https://picsum.photos/seed/midsommar/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "The Babadook",
+    "year": 2014,
+    "genre": "Horreur",
+    "description": "Une mère et son fils sont terrorisés par une entité monstrueuse issue d'un livre pour enfants.",
+    "poster": "https://picsum.photos/seed/babadook/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "It Follows",
+    "year": 2014,
+    "genre": "Horreur",
+    "description": "Une adolescente est poursuivie par une entité surnaturelle qui se transmet par contact physique.",
+    "poster": "https://picsum.photos/seed/itfollows/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "The Witch",
+    "year": 2015,
+    "genre": "Horreur",
+    "description": "Une famille puritaine du XVIIe siècle est tourmentée par des forces maléfiques à la lisière d'une forêt.",
+    "poster": "https://picsum.photos/seed/thewitch/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "Pan's Labyrinth",
+    "year": 2006,
+    "genre": "Fantaisie",
+    "description": "Dans l'Espagne franquiste, une fillette découvre un monde fantastique souterrain pour échapper à la réalité cruelle.",
+    "poster": "https://picsum.photos/seed/panslabyrinth/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "The Shape of Water",
+    "year": 2017,
+    "genre": "Fantaisie",
+    "description": "Une femme muette travaillant dans un laboratoire secret tombe amoureuse d'une créature amphibie captive.",
+    "poster": "https://picsum.photos/seed/shapeofwater/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "Princess Mononoke",
+    "year": 1997,
+    "genre": "Animation",
+    "description": "Un prince maudit s'aventure dans une forêt où humains et dieux de la nature s'affrontent.",
+    "poster": "https://picsum.photos/seed/mononoke/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "My Neighbor Totoro",
+    "year": 1988,
+    "genre": "Animation",
+    "description": "Deux sœurs déménagent à la campagne et rencontrent des esprits de la forêt merveilleux.",
+    "poster": "https://picsum.photos/seed/totoro/320/480",
+    "rating": 7.3
+  },
+  {
+    "title": "Howl's Moving Castle",
+    "year": 2004,
+    "genre": "Animation",
+    "description": "Une jeune fille transformée en vieille femme cherche refuge dans le château ambulant d'un sorcier.",
+    "poster": "https://picsum.photos/seed/howlscastle/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "Akira",
+    "year": 1988,
+    "genre": "Animation",
+    "description": "Dans un Tokyo post-apocalyptique, un jeune motard acquiert des pouvoirs psychiques dévastateurs.",
+    "poster": "https://picsum.photos/seed/akira/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Ghost in the Shell",
+    "year": 1995,
+    "genre": "Animation",
+    "description": "Une cyborg policière traque un hacker mystérieux tout en questionnant sa propre humanité.",
+    "poster": "https://picsum.photos/seed/ghostinshell/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Perfect Blue",
+    "year": 1997,
+    "genre": "Animation",
+    "description": "Une idole pop devenue actrice perd pied avec la réalité alors qu'un harceleur la poursuit.",
+    "poster": "https://picsum.photos/seed/perfectblue/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "Grave of the Fireflies",
+    "year": 1988,
+    "genre": "Animation",
+    "description": "Deux enfants japonais luttent pour survivre dans les derniers mois de la Seconde Guerre mondiale.",
+    "poster": "https://picsum.photos/seed/gravefireflies/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "Your Name",
+    "year": 2016,
+    "genre": "Animation",
+    "description": "Deux adolescents échangent mystérieusement leurs corps à travers le temps et l'espace.",
+    "poster": "https://picsum.photos/seed/yourname/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "WALL-E",
+    "year": 2008,
+    "genre": "Animation",
+    "description": "Un petit robot nettoyeur sur une Terre abandonnée tombe amoureux d'une sonde venue de l'espace.",
+    "poster": "https://picsum.photos/seed/walle/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "Up",
+    "year": 2009,
+    "genre": "Animation",
+    "description": "Un vieil homme accroche des milliers de ballons à sa maison pour réaliser son rêve d'aventure.",
+    "poster": "https://picsum.photos/seed/up/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Inside Out",
+    "year": 2015,
+    "genre": "Animation",
+    "description": "Les émotions personnifiées d'une fillette gèrent sa vie intérieure lors d'un déménagement difficile.",
+    "poster": "https://picsum.photos/seed/insideout/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Coco",
+    "year": 2017,
+    "genre": "Animation",
+    "description": "Un garçon passionné de musique se retrouve dans le Monde des Morts et découvre l'histoire de sa famille.",
+    "poster": "https://picsum.photos/seed/coco/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "Ratatouille",
+    "year": 2007,
+    "genre": "Animation",
+    "description": "Un rat passionné de cuisine s'associe secrètement avec un jeune cuisinier maladroit à Paris.",
+    "poster": "https://picsum.photos/seed/ratatouille/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Finding Nemo",
+    "year": 2003,
+    "genre": "Animation",
+    "description": "Un poisson-clown traverse l'océan pour retrouver son fils capturé par un plongeur.",
+    "poster": "https://picsum.photos/seed/findingnemo/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "The Lion King",
+    "year": 1994,
+    "genre": "Animation",
+    "description": "Un jeune lion doit affronter son passé pour prendre la place qui lui revient en tant que roi.",
+    "poster": "https://picsum.photos/seed/lionking/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "Toy Story",
+    "year": 1995,
+    "genre": "Animation",
+    "description": "Les jouets d'un garçon prennent vie et le cowboy préféré est menacé par l'arrivée d'un nouveau jouet.",
+    "poster": "https://picsum.photos/seed/toystory/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Toy Story 3",
+    "year": 2010,
+    "genre": "Animation",
+    "description": "Les jouets sont accidentellement donnés à une crèche où règne un ours en peluche tyrannique.",
+    "poster": "https://picsum.photos/seed/toystory3/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "The Incredibles",
+    "year": 2004,
+    "genre": "Animation",
+    "description": "Une famille de super-héros forcée à la retraite reprend du service pour sauver le monde.",
+    "poster": "https://picsum.photos/seed/incredibles/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Spider-Man: Into the Spider-Verse",
+    "year": 2018,
+    "genre": "Animation",
+    "description": "Un adolescent de Brooklyn devient Spider-Man et rencontre d'autres versions de lui-même venues d'univers parallèles.",
+    "poster": "https://picsum.photos/seed/spiderverse/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "Grave of the Fireflies",
+    "year": 1988,
+    "genre": "Animation",
+    "description": "Deux orphelins japonais tentent de survivre dans le Japon dévasté de la fin de la guerre.",
+    "poster": "https://picsum.photos/seed/fireflies/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "The Social Network",
+    "year": 2010,
+    "genre": "Drame",
+    "description": "L'histoire de la création de Facebook et des trahisons qui l'ont accompagnée.",
+    "poster": "https://picsum.photos/seed/socialnetwork/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "The Wolf of Wall Street",
+    "year": 2013,
+    "genre": "Comédie",
+    "description": "L'ascension et la chute d'un courtier en bourse escroc vivant dans l'excès total.",
+    "poster": "https://picsum.photos/seed/wolfwallstreet/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "Goodfellas",
+    "year": 1990,
+    "genre": "Crime",
+    "description": "Un jeune homme réalise son rêve de devenir gangster dans la mafia new-yorkaise.",
+    "poster": "https://picsum.photos/seed/goodfellas2/320/480",
+    "rating": 8.5
+  },
+  {
+    "title": "Boogie Nights",
+    "year": 1997,
+    "genre": "Drame",
+    "description": "Un jeune homme devient star du cinéma pornographique dans le Los Angeles des années 70-80.",
+    "poster": "https://picsum.photos/seed/boogienights/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Magnolia",
+    "year": 1999,
+    "genre": "Drame",
+    "description": "Les destins entrelacés de plusieurs personnages dans la vallée de San Fernando en une journée.",
+    "poster": "https://picsum.photos/seed/magnolia/320/480",
+    "rating": 6.8
+  },
+  {
+    "title": "Her",
+    "year": 2013,
+    "genre": "Science-Fiction",
+    "description": "Un homme solitaire tombe amoureux d'une intelligence artificielle à la voix envoûtante.",
+    "poster": "https://picsum.photos/seed/her/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Ex Machina",
+    "year": 2014,
+    "genre": "Science-Fiction",
+    "description": "Un programmeur est invité à tester une IA féminine d'un réalisme troublant.",
+    "poster": "https://picsum.photos/seed/exmachina/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Arrival",
+    "year": 2016,
+    "genre": "Science-Fiction",
+    "description": "Une linguiste tente de communiquer avec des extraterrestres dont le langage altère la perception du temps.",
+    "poster": "https://picsum.photos/seed/arrival/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "District 9",
+    "year": 2009,
+    "genre": "Science-Fiction",
+    "description": "Des extraterrestres réfugiés sont parqués dans un ghetto en Afrique du Sud, et un bureaucrate est contaminé.",
+    "poster": "https://picsum.photos/seed/district9/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Moon",
+    "year": 2009,
+    "genre": "Science-Fiction",
+    "description": "Un homme seul sur une base lunaire découvre un terrible secret sur sa propre identité.",
+    "poster": "https://picsum.photos/seed/moon/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Annihilation",
+    "year": 2018,
+    "genre": "Science-Fiction",
+    "description": "Une biologiste entre dans une zone mystérieuse où les lois de la nature sont altérées.",
+    "poster": "https://picsum.photos/seed/annihilation/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Children of Men",
+    "year": 2006,
+    "genre": "Science-Fiction",
+    "description": "Dans un futur où l'humanité est devenue stérile, un homme doit protéger la seule femme enceinte.",
+    "poster": "https://picsum.photos/seed/childrenofmen/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "year": 2004,
+    "genre": "Romance",
+    "description": "Deux ex-amants font effacer leurs souvenirs l'un de l'autre, mais l'amour résiste à l'oubli.",
+    "poster": "https://picsum.photos/seed/eternalsunshine2/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Lost in Translation",
+    "year": 2003,
+    "genre": "Romance",
+    "description": "Deux Américains solitaires se rencontrent dans un hôtel de Tokyo et partagent une connexion éphémère.",
+    "poster": "https://picsum.photos/seed/lostintranslation/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "Before Sunrise",
+    "year": 1995,
+    "genre": "Romance",
+    "description": "Deux étrangers se rencontrent dans un train et passent une nuit magique à Vienne.",
+    "poster": "https://picsum.photos/seed/beforesunrise/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Before Sunset",
+    "year": 2004,
+    "genre": "Romance",
+    "description": "Neuf ans après leur rencontre à Vienne, Jesse et Céline se retrouvent à Paris.",
+    "poster": "https://picsum.photos/seed/beforesunset/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "In the Mood for Love",
+    "year": 2000,
+    "genre": "Romance",
+    "description": "Deux voisins découvrent que leurs conjoints ont une liaison et développent une intimité platonique.",
+    "poster": "https://picsum.photos/seed/inthemoodforlove/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "genre": "Comédie",
+    "description": "Un concierge légendaire et son protégé sont impliqués dans le vol d'un tableau de la Renaissance.",
+    "poster": "https://picsum.photos/seed/grandbudapest/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "The Royal Tenenbaums",
+    "year": 2001,
+    "genre": "Comédie",
+    "description": "Un père absent tente de se réconcilier avec ses trois enfants prodiges devenus dysfonctionnels.",
+    "poster": "https://picsum.photos/seed/tenenbaums/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Moonrise Kingdom",
+    "year": 2012,
+    "genre": "Comédie",
+    "description": "Deux enfants amoureux fuguent sur une île de Nouvelle-Angleterre, provoquant une recherche frénétique.",
+    "poster": "https://picsum.photos/seed/moonrisekingdom/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Little Miss Sunshine",
+    "year": 2006,
+    "genre": "Comédie",
+    "description": "Une famille dysfonctionnelle traverse le pays en van pour emmener leur fille à un concours de beauté.",
+    "poster": "https://picsum.photos/seed/littlemisssunshine/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Juno",
+    "year": 2007,
+    "genre": "Comédie",
+    "description": "Une adolescente enceinte cherche le couple adoptif parfait tout en naviguant l'adolescence.",
+    "poster": "https://picsum.photos/seed/juno/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Superbad",
+    "year": 2007,
+    "genre": "Comédie",
+    "description": "Deux lycéens inséparables tentent d'acheter de l'alcool pour une fête avant la fin du lycée.",
+    "poster": "https://picsum.photos/seed/superbad/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "The Hangover",
+    "year": 2009,
+    "genre": "Comédie",
+    "description": "Trois amis se réveillent à Las Vegas sans aucun souvenir de la nuit et doivent retrouver le marié disparu.",
+    "poster": "https://picsum.photos/seed/hangover/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Groundhog Day",
+    "year": 1993,
+    "genre": "Comédie",
+    "description": "Un présentateur météo arrogant revit indéfiniment la même journée dans une petite ville.",
+    "poster": "https://picsum.photos/seed/groundhogday/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "Ferris Bueller's Day Off",
+    "year": 1986,
+    "genre": "Comédie",
+    "description": "Un lycéen charismatique sèche les cours et entraîne ses amis dans une journée épique à Chicago.",
+    "poster": "https://picsum.photos/seed/ferrisbueller/320/480",
+    "rating": 7.5
+  },
+  {
+    "title": "The Breakfast Club",
+    "year": 1985,
+    "genre": "Drame",
+    "description": "Cinq lycéens de milieux différents se découvrent lors d'une retenue le samedi.",
+    "poster": "https://picsum.photos/seed/breakfastclub/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Dead Poets Society",
+    "year": 1989,
+    "genre": "Drame",
+    "description": "Un professeur de littérature inspire ses élèves à saisir le jour et penser par eux-mêmes.",
+    "poster": "https://picsum.photos/seed/deadpoets/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Good Will Hunting",
+    "year": 1997,
+    "genre": "Drame",
+    "description": "Un génie des mathématiques travaillant comme concierge est aidé par un psychologue à surmonter ses traumatismes.",
+    "poster": "https://picsum.photos/seed/goodwillhunting/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "A Beautiful Mind",
+    "year": 2001,
+    "genre": "Drame",
+    "description": "Un mathématicien brillant lutte contre la schizophrénie tout en faisant des découvertes révolutionnaires.",
+    "poster": "https://picsum.photos/seed/beautifulmind/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "The Imitation Game",
+    "year": 2014,
+    "genre": "Drame",
+    "description": "Alan Turing crée une machine pour décrypter le code Enigma des nazis pendant la Seconde Guerre mondiale.",
+    "poster": "https://picsum.photos/seed/imitationgame/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "12 Years a Slave",
+    "year": 2013,
+    "genre": "Drame",
+    "description": "Un homme noir libre est kidnappé et vendu comme esclave dans le Sud des États-Unis avant la guerre civile.",
+    "poster": "https://picsum.photos/seed/12yearsslave/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "Moonlight",
+    "year": 2016,
+    "genre": "Drame",
+    "description": "L'histoire en trois actes d'un jeune homme noir grandissant dans un quartier difficile de Miami.",
+    "poster": "https://picsum.photos/seed/moonlight/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "Boyhood",
+    "year": 2014,
+    "genre": "Drame",
+    "description": "La vie d'un garçon du Texas filmée sur 12 ans, de l'enfance à l'entrée à l'université.",
+    "poster": "https://picsum.photos/seed/boyhood/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Manchester by the Sea",
+    "year": 2016,
+    "genre": "Drame",
+    "description": "Un homme brisé doit s'occuper de son neveu après la mort de son frère.",
+    "poster": "https://picsum.photos/seed/manchesterbysea/320/480",
+    "rating": 7.3
+  },
+  {
+    "title": "Three Billboards Outside Ebbing, Missouri",
+    "year": 2017,
+    "genre": "Drame",
+    "description": "Une mère en colère loue trois panneaux publicitaires pour défier la police locale qui n'a pas résolu le meurtre de sa fille.",
+    "poster": "https://picsum.photos/seed/threebillboards/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "The Revenant",
+    "year": 2015,
+    "genre": "Aventure",
+    "description": "Un trappeur laissé pour mort après l'attaque d'un ours survit et traque l'homme qui l'a trahi.",
+    "poster": "https://picsum.photos/seed/revenant/320/480",
+    "rating": 7.5
+  },
+  {
+    "title": "Birdman",
+    "year": 2014,
+    "genre": "Comédie",
+    "description": "Un acteur célèbre pour son rôle de super-héros tente de monter une pièce de théâtre à Broadway.",
+    "poster": "https://picsum.photos/seed/birdman/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "La La Land",
+    "year": 2016,
+    "genre": "Romance",
+    "description": "Une actrice en herbe et un pianiste de jazz tombent amoureux à Los Angeles tout en poursuivant leurs rêves.",
+    "poster": "https://picsum.photos/seed/lalaland/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "The Artist",
+    "year": 2011,
+    "genre": "Romance",
+    "description": "Une star du cinéma muet voit sa carrière s'effondrer avec l'arrivée du parlant tandis qu'une jeune actrice monte.",
+    "poster": "https://picsum.photos/seed/theartist/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Amélie",
+    "year": 2001,
+    "genre": "Comédie",
+    "description": "Une serveuse timide à Montmartre décide d'améliorer secrètement la vie des gens autour d'elle.",
+    "poster": "https://picsum.photos/seed/amelie2/320/480",
+    "rating": 6.8
+  },
+  {
+    "title": "The Lives of Others",
+    "year": 2006,
+    "genre": "Drame",
+    "description": "Un agent de la Stasi surveille un dramaturge est-allemand et commence à remettre en question le régime.",
+    "poster": "https://picsum.photos/seed/livesofothers/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "City of God",
+    "year": 2002,
+    "genre": "Crime",
+    "description": "Deux garçons grandissent dans les favelas violentes de Rio, l'un devient photographe, l'autre chef de gang.",
+    "poster": "https://picsum.photos/seed/cidadededeus/320/480",
+    "rating": 8.5
+  },
+  {
+    "title": "Amores Perros",
+    "year": 2000,
+    "genre": "Drame",
+    "description": "Trois histoires interconnectées par un accident de voiture à Mexico explorent l'amour et la violence.",
+    "poster": "https://picsum.photos/seed/amoresperros/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "Y Tu Mamá También",
+    "year": 2001,
+    "genre": "Drame",
+    "description": "Deux adolescents mexicains partent en road trip avec une femme plus âgée vers une plage mythique.",
+    "poster": "https://picsum.photos/seed/ytumama/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Roma",
+    "year": 2018,
+    "genre": "Drame",
+    "description": "Le quotidien d'une domestique dans une famille bourgeoise de Mexico au début des années 70.",
+    "poster": "https://picsum.photos/seed/roma/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "The Secret in Their Eyes",
+    "year": 2009,
+    "genre": "Thriller",
+    "description": "Un officier de justice à la retraite écrit un roman sur une affaire de meurtre non résolue qui le hante.",
+    "poster": "https://picsum.photos/seed/secreteyes/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Wild Tales",
+    "year": 2014,
+    "genre": "Comédie",
+    "description": "Six histoires indépendantes explorent les extrémités auxquelles les gens sont poussés par l'injustice.",
+    "poster": "https://picsum.photos/seed/wildtales/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "Caché",
+    "year": 2005,
+    "genre": "Thriller",
+    "description": "Un couple bourgeois reçoit des vidéos de surveillance anonymes qui révèlent un passé enfoui.",
+    "poster": "https://picsum.photos/seed/cache/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "Amour",
+    "year": 2012,
+    "genre": "Drame",
+    "description": "Un couple de retraités parisiens fait face à la maladie dégénérative de la femme.",
+    "poster": "https://picsum.photos/seed/amour/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "Blue Is the Warmest Color",
+    "year": 2013,
+    "genre": "Romance",
+    "description": "Une lycéenne découvre le désir et la liberté quand elle rencontre une jeune femme aux cheveux bleus.",
+    "poster": "https://picsum.photos/seed/bluecolor/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Portrait of a Lady on Fire",
+    "year": 2019,
+    "genre": "Romance",
+    "description": "Au XVIIIe siècle, une peintre et son modèle développent une passion interdite sur une île bretonne.",
+    "poster": "https://picsum.photos/seed/portraitlady/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "The Handmaiden",
+    "year": 2016,
+    "genre": "Thriller",
+    "description": "Dans la Corée des années 30, une pickpocket est engagée comme servante d'une héritière dans un complot de séduction.",
+    "poster": "https://picsum.photos/seed/handmaiden/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Oldboy",
+    "year": 2003,
+    "genre": "Thriller",
+    "description": "Séquestré 15 ans sans raison, un homme est libéré et a cinq jours pour découvrir pourquoi.",
+    "poster": "https://picsum.photos/seed/oldboy2/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "Memories of Murder",
+    "year": 2003,
+    "genre": "Thriller",
+    "description": "Deux détectives aux méthodes opposées traquent un tueur en série dans la Corée rurale des années 80.",
+    "poster": "https://picsum.photos/seed/memoriesofmurder/320/480",
+    "rating": 7.5
+  },
+  {
+    "title": "A Separation",
+    "year": 2011,
+    "genre": "Drame",
+    "description": "Un couple iranien se sépare et un enchaînement d'événements met en lumière les tensions sociales.",
+    "poster": "https://picsum.photos/seed/aseparation/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Rashomon",
+    "year": 1950,
+    "genre": "Drame",
+    "description": "Un crime est raconté de quatre points de vue contradictoires, questionnant la nature de la vérité.",
+    "poster": "https://picsum.photos/seed/rashomon/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Seven Samurai",
+    "year": 1954,
+    "genre": "Aventure",
+    "description": "Un village de paysans engage sept samouraïs pour les défendre contre des bandits.",
+    "poster": "https://picsum.photos/seed/sevensamurai/320/480",
+    "rating": 8.6
+  },
+  {
+    "title": "Ikiru",
+    "year": 1952,
+    "genre": "Drame",
+    "description": "Un bureaucrate apprenant qu'il est mourant cherche un sens à sa vie en construisant un parc.",
+    "poster": "https://picsum.photos/seed/ikiru/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "Yojimbo",
+    "year": 1961,
+    "genre": "Aventure",
+    "description": "Un ronin rusé manipule deux gangs rivaux pour libérer une petite ville de leur emprise.",
+    "poster": "https://picsum.photos/seed/yojimbo/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Harakiri",
+    "year": 1962,
+    "genre": "Drame",
+    "description": "Un samouraï sans maître se présente à un clan pour commettre le seppuku, mais cache une vengeance.",
+    "poster": "https://picsum.photos/seed/harakiri/320/480",
+    "rating": 8.6
+  },
+  {
+    "title": "Stalker",
+    "year": 1979,
+    "genre": "Science-Fiction",
+    "description": "Un guide emmène deux hommes dans une zone mystérieuse où un lieu exauce les désirs les plus profonds.",
+    "poster": "https://picsum.photos/seed/stalker/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Solaris",
+    "year": 1972,
+    "genre": "Science-Fiction",
+    "description": "Un psychologue envoyé sur une station spatiale découvre que l'océan de la planète matérialise les souvenirs.",
+    "poster": "https://picsum.photos/seed/solaris/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Come and See",
+    "year": 1985,
+    "genre": "Guerre",
+    "description": "Un adolescent biélorusse est témoin des atrocités de l'occupation nazie pendant la Seconde Guerre mondiale.",
+    "poster": "https://picsum.photos/seed/comeandsee/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "The Seventh Seal",
+    "year": 1957,
+    "genre": "Drame",
+    "description": "Un chevalier de retour des croisades joue aux échecs avec la Mort pour gagner du temps.",
+    "poster": "https://picsum.photos/seed/seventhseal/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Wild Strawberries",
+    "year": 1957,
+    "genre": "Drame",
+    "description": "Un professeur âgé fait un road trip et revisite les souvenirs et regrets de sa vie.",
+    "poster": "https://picsum.photos/seed/wildstrawberries/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Persona",
+    "year": 1966,
+    "genre": "Drame",
+    "description": "Une actrice muette et son infirmière développent une relation troublante où leurs identités se confondent.",
+    "poster": "https://picsum.photos/seed/persona/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "8½",
+    "year": 1963,
+    "genre": "Drame",
+    "description": "Un réalisateur en panne d'inspiration se réfugie dans ses souvenirs et fantasmes.",
+    "poster": "https://picsum.photos/seed/eightandhalf/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "La Dolce Vita",
+    "year": 1960,
+    "genre": "Drame",
+    "description": "Un journaliste mondain erre dans le Rome des années 60, entre fêtes décadentes et quête de sens.",
+    "poster": "https://picsum.photos/seed/dolcevita/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "Bicycle Thieves",
+    "year": 1948,
+    "genre": "Drame",
+    "description": "Un ouvrier et son fils cherchent désespérément le vélo volé dont dépend leur survie.",
+    "poster": "https://picsum.photos/seed/bicyclethieves/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "The 400 Blows",
+    "year": 1959,
+    "genre": "Drame",
+    "description": "Un garçon parisien négligé par sa famille et l'école se tourne vers la délinquance.",
+    "poster": "https://picsum.photos/seed/400blows/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "Breathless",
+    "year": 1960,
+    "genre": "Crime",
+    "description": "Un petit voyou et une étudiante américaine vivent une romance fugace dans le Paris de la Nouvelle Vague.",
+    "poster": "https://picsum.photos/seed/breathless/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "The Battle of Algiers",
+    "year": 1966,
+    "genre": "Guerre",
+    "description": "La résistance algérienne contre l'occupation française vue des deux côtés du conflit.",
+    "poster": "https://picsum.photos/seed/battleofalgiers/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "Salo, or the 120 Days of Sodom",
+    "year": 1975,
+    "genre": "Drame",
+    "description": "Quatre fascistes italiens kidnappent des adolescents et les soumettent à des tortures systématiques.",
+    "poster": "https://picsum.photos/seed/salo/320/480",
+    "rating": 7.5
+  },
+  {
+    "title": "Suspiria",
+    "year": 1977,
+    "genre": "Horreur",
+    "description": "Une danseuse américaine intègre une école de ballet allemande dirigée par une assemblée de sorcières.",
+    "poster": "https://picsum.photos/seed/suspiria/320/480",
+    "rating": 6.8
+  },
+  {
+    "title": "Nosferatu",
+    "year": 1922,
+    "genre": "Horreur",
+    "description": "Un agent immobilier rend visite à un comte transylvanien qui se révèle être un vampire.",
+    "poster": "https://picsum.photos/seed/nosferatu/320/480",
+    "rating": 7.3
+  },
+  {
+    "title": "Metropolis",
+    "year": 1927,
+    "genre": "Science-Fiction",
+    "description": "Dans une mégalopole futuriste divisée en classes, un médiateur tente de réconcilier ouvriers et dirigeants.",
+    "poster": "https://picsum.photos/seed/metropolis/320/480",
+    "rating": 6.8
+  },
+  {
+    "title": "M",
+    "year": 1931,
+    "genre": "Crime",
+    "description": "La pègre et la police traquent un tueur d'enfants dans le Berlin de Weimar.",
+    "poster": "https://picsum.photos/seed/mlang/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Playtime",
+    "year": 1967,
+    "genre": "Comédie",
+    "description": "Monsieur Hulot se perd dans un Paris ultramoderne fait de verre et d'acier.",
+    "poster": "https://picsum.photos/seed/playtime/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "The Wages of Fear",
+    "year": 1953,
+    "genre": "Thriller",
+    "description": "Quatre hommes désespérés transportent de la nitroglycérine sur des routes dangereuses en Amérique du Sud.",
+    "poster": "https://picsum.photos/seed/wagesoffear/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Diabolique",
+    "year": 1955,
+    "genre": "Thriller",
+    "description": "La femme et la maîtresse d'un directeur d'école tyrannique complotent pour le tuer.",
+    "poster": "https://picsum.photos/seed/diabolique/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Eyes Wide Shut",
+    "year": 1999,
+    "genre": "Thriller",
+    "description": "Un médecin new-yorkais s'aventure dans une nuit de tentations après une confession de sa femme.",
+    "poster": "https://picsum.photos/seed/eyeswideshut/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Full Metal Jacket",
+    "year": 1987,
+    "genre": "Guerre",
+    "description": "Des recrues subissent un entraînement brutal avant d'être envoyées au Vietnam.",
+    "poster": "https://picsum.photos/seed/fullmetaljacket/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Barry Lyndon",
+    "year": 1975,
+    "genre": "Drame",
+    "description": "Un Irlandais ambitieux du XVIIIe siècle use de ruse pour s'élever dans la société anglaise.",
+    "poster": "https://picsum.photos/seed/barrylyndon/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Mulholland Drive",
+    "year": 2001,
+    "genre": "Thriller",
+    "description": "Une aspirante actrice et une amnésique enquêtent sur un mystère dans le Hollywood onirique de David Lynch.",
+    "poster": "https://picsum.photos/seed/mulhollanddrive/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Blue Velvet",
+    "year": 1986,
+    "genre": "Thriller",
+    "description": "Un jeune homme découvre une oreille coupée et plonge dans les dessous sordides de sa ville paisible.",
+    "poster": "https://picsum.photos/seed/bluevelvet/320/480",
+    "rating": 7.5
+  },
+  {
+    "title": "Eraserhead",
+    "year": 1977,
+    "genre": "Horreur",
+    "description": "Un homme vit un cauchemar industriel avec son bébé monstrueux dans un monde surréaliste.",
+    "poster": "https://picsum.photos/seed/eraserhead/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Twin Peaks: Fire Walk with Me",
+    "year": 1992,
+    "genre": "Thriller",
+    "description": "Les sept derniers jours de Laura Palmer avant sa mort dans la petite ville de Twin Peaks.",
+    "poster": "https://picsum.photos/seed/twinpeaks/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "Barton Fink",
+    "year": 1991,
+    "genre": "Drame",
+    "description": "Un dramaturge new-yorkais engagé par Hollywood souffre du syndrome de la page blanche dans un hôtel étrange.",
+    "poster": "https://picsum.photos/seed/bartonfink/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "The Big Short",
+    "year": 2015,
+    "genre": "Drame",
+    "description": "Des outsiders de la finance parient contre le marché immobilier avant la crise de 2008.",
+    "poster": "https://picsum.photos/seed/bigshort/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "Spotlight",
+    "year": 2015,
+    "genre": "Drame",
+    "description": "L'équipe d'investigation du Boston Globe révèle un scandale massif d'abus au sein de l'Église catholique.",
+    "poster": "https://picsum.photos/seed/spotlight/320/480",
+    "rating": 7.5
+  },
+  {
+    "title": "All the President's Men",
+    "year": 1976,
+    "genre": "Drame",
+    "description": "Deux journalistes du Washington Post enquêtent sur le scandale du Watergate.",
+    "poster": "https://picsum.photos/seed/presidentsmen/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Network",
+    "year": 1976,
+    "genre": "Drame",
+    "description": "Un présentateur TV devient fou en direct et est exploité par la chaîne pour l'audimat.",
+    "poster": "https://picsum.photos/seed/network/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Dog Day Afternoon",
+    "year": 1975,
+    "genre": "Crime",
+    "description": "Un braquage de banque tourne au fiasco médiatique quand le voleur est piégé avec des otages.",
+    "poster": "https://picsum.photos/seed/dogdayafternoon/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Serpico",
+    "year": 1973,
+    "genre": "Crime",
+    "description": "Un policier new-yorkais intègre lutte seul contre la corruption systémique dans la police.",
+    "poster": "https://picsum.photos/seed/serpico/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "Chinatown",
+    "year": 1974,
+    "genre": "Crime",
+    "description": "Un détective privé à Los Angeles découvre une conspiration impliquant l'eau, le pouvoir et l'inceste.",
+    "poster": "https://picsum.photos/seed/chinatown/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "L.A. Confidential",
+    "year": 1997,
+    "genre": "Crime",
+    "description": "Trois policiers aux méthodes différentes enquêtent sur un massacre dans le Los Angeles corrompu des années 50.",
+    "poster": "https://picsum.photos/seed/laconfidential/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Mystic River",
+    "year": 2003,
+    "genre": "Crime",
+    "description": "Trois amis d'enfance sont réunis par le meurtre de la fille de l'un d'eux, ravivant un traumatisme ancien.",
+    "poster": "https://picsum.photos/seed/mysticriver/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Sicario",
+    "year": 2015,
+    "genre": "Thriller",
+    "description": "Une agente du FBI est recrutée pour une opération clandestine contre les cartels mexicains.",
+    "poster": "https://picsum.photos/seed/sicario/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "Wind River",
+    "year": 2017,
+    "genre": "Thriller",
+    "description": "Un chasseur et une agente du FBI enquêtent sur le meurtre d'une jeune femme dans une réserve amérindienne.",
+    "poster": "https://picsum.photos/seed/windriver/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Hell or High Water",
+    "year": 2016,
+    "genre": "Crime",
+    "description": "Deux frères braquent des banques au Texas pour sauver la ferme familiale de la saisie.",
+    "poster": "https://picsum.photos/seed/hellorhighwater/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Nightcrawler",
+    "year": 2014,
+    "genre": "Thriller",
+    "description": "Un sociopathe ambitieux devient cameraman freelance pour la télévision nocturne de Los Angeles.",
+    "poster": "https://picsum.photos/seed/nightcrawler/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "Drive",
+    "year": 2011,
+    "genre": "Thriller",
+    "description": "Un cascadeur qui travaille comme chauffeur pour des criminels la nuit tombe amoureux de sa voisine.",
+    "poster": "https://picsum.photos/seed/drive/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Only God Forgives",
+    "year": 2013,
+    "genre": "Crime",
+    "description": "Un dealer à Bangkok affronte un policier mystique après que sa mère exige vengeance pour son frère tué.",
+    "poster": "https://picsum.photos/seed/onlygod/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "A Prophet",
+    "year": 2009,
+    "genre": "Crime",
+    "description": "Un jeune détenu illettré gravit les échelons du pouvoir en prison entre la mafia corse et les gangs arabes.",
+    "poster": "https://picsum.photos/seed/aprophet/320/480",
+    "rating": 7.5
+  },
+  {
+    "title": "Incendies",
+    "year": 2010,
+    "genre": "Drame",
+    "description": "Des jumeaux découvrent le passé terrible de leur mère au Moyen-Orient à travers une enquête posthume.",
+    "poster": "https://picsum.photos/seed/incendies/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "Dune",
+    "year": 2021,
+    "genre": "Science-Fiction",
+    "description": "L'héritier d'une noble famille doit voyager sur la planète la plus dangereuse de l'univers pour assurer l'avenir de sa lignée.",
+    "poster": "https://picsum.photos/seed/dune2021/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Dune: Part Two",
+    "year": 2024,
+    "genre": "Science-Fiction",
+    "description": "Paul Atréides s'allie aux Fremen pour venger sa famille et affronter les forces qui ont détruit sa maison.",
+    "poster": "https://picsum.photos/seed/dune2/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "Everything Everywhere All at Once",
+    "year": 2022,
+    "genre": "Science-Fiction",
+    "description": "Une immigrée chinoise découvre qu'elle peut accéder aux compétences de ses versions dans des univers parallèles.",
+    "poster": "https://picsum.photos/seed/eeaao/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "The Batman",
+    "year": 2022,
+    "genre": "Action",
+    "description": "Batman enquête sur un tueur en série qui cible l'élite corrompue de Gotham City.",
+    "poster": "https://picsum.photos/seed/thebatman/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Oppenheimer",
+    "year": 2023,
+    "genre": "Drame",
+    "description": "L'histoire du physicien qui a dirigé le projet Manhattan et créé la bombe atomique.",
+    "poster": "https://picsum.photos/seed/oppenheimer/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "Barbie",
+    "year": 2023,
+    "genre": "Comédie",
+    "description": "Barbie quitte Barbieland pour le monde réel et découvre les complexités de l'existence humaine.",
+    "poster": "https://picsum.photos/seed/barbie/320/480",
+    "rating": 7.3
+  },
+  {
+    "title": "Poor Things",
+    "year": 2023,
+    "genre": "Comédie",
+    "description": "Une jeune femme ramenée à la vie par un scientifique excentrique découvre le monde avec une curiosité insatiable.",
+    "poster": "https://picsum.photos/seed/poorthings/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "The Holdovers",
+    "year": 2023,
+    "genre": "Comédie",
+    "description": "Un professeur grincheux garde un étudiant rebelle pendant les vacances de Noël dans les années 70.",
+    "poster": "https://picsum.photos/seed/holdovers/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Past Lives",
+    "year": 2023,
+    "genre": "Romance",
+    "description": "Deux amis d'enfance coréens se retrouvent à New York vingt ans plus tard, entre nostalgie et choix de vie.",
+    "poster": "https://picsum.photos/seed/pastlives/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Killers of the Flower Moon",
+    "year": 2023,
+    "genre": "Crime",
+    "description": "Dans les années 20, les Osage sont mystérieusement assassinés après la découverte de pétrole sur leurs terres.",
+    "poster": "https://picsum.photos/seed/killersflowermoon/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "The Zone of Interest",
+    "year": 2023,
+    "genre": "Drame",
+    "description": "La vie quotidienne du commandant d'Auschwitz et sa famille, juste de l'autre côté du mur du camp.",
+    "poster": "https://picsum.photos/seed/zoneofinterest/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Anatomy of a Fall",
+    "year": 2023,
+    "genre": "Thriller",
+    "description": "Une femme est soupçonnée de la mort de son mari, et le procès expose les fissures de leur couple.",
+    "poster": "https://picsum.photos/seed/anatomyfall/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "The Banshees of Inisherin",
+    "year": 2022,
+    "genre": "Drame",
+    "description": "Sur une île irlandaise, un homme met fin brutalement à une amitié de longue date sans explication.",
+    "poster": "https://picsum.photos/seed/banshees/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Tár",
+    "year": 2022,
+    "genre": "Drame",
+    "description": "Une cheffe d'orchestre au sommet de sa carrière voit sa vie s'effondrer sous le poids de son passé.",
+    "poster": "https://picsum.photos/seed/tar/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Triangle of Sadness",
+    "year": 2022,
+    "genre": "Comédie",
+    "description": "Des ultra-riches sur un yacht de luxe voient la hiérarchie sociale s'inverser après un naufrage.",
+    "poster": "https://picsum.photos/seed/triangleofsadness/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Decision to Leave",
+    "year": 2022,
+    "genre": "Thriller",
+    "description": "Un détective tombe amoureux de la suspecte principale dans une affaire de mort suspecte.",
+    "poster": "https://picsum.photos/seed/decisiontoleave/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "RRR",
+    "year": 2022,
+    "genre": "Action",
+    "description": "Deux révolutionnaires indiens fictifs se lient d'amitié puis s'affrontent sous le joug britannique.",
+    "poster": "https://picsum.photos/seed/rrr/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Top Gun: Maverick",
+    "year": 2022,
+    "genre": "Action",
+    "description": "Maverick forme une nouvelle génération de pilotes pour une mission quasi-impossible.",
+    "poster": "https://picsum.photos/seed/topgunmaverick/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "Nope",
+    "year": 2022,
+    "genre": "Horreur",
+    "description": "Des propriétaires d'un ranch isolé tentent de capturer la preuve d'un phénomène extraterrestre.",
+    "poster": "https://picsum.photos/seed/nope/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "The Whale",
+    "year": 2022,
+    "genre": "Drame",
+    "description": "Un professeur d'anglais en ligne souffrant d'obésité morbide tente de se reconnecter avec sa fille.",
+    "poster": "https://picsum.photos/seed/thewhale/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "Aftersun",
+    "year": 2022,
+    "genre": "Drame",
+    "description": "Une femme se remémore des vacances avec son père quand elle était enfant, à travers des cassettes vidéo.",
+    "poster": "https://picsum.photos/seed/aftersun/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "The Fabelmans",
+    "year": 2022,
+    "genre": "Drame",
+    "description": "Un jeune garçon découvre un secret familial dévastateur alors qu'il se passionne pour le cinéma.",
+    "poster": "https://picsum.photos/seed/fabelmans/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Elvis",
+    "year": 2022,
+    "genre": "Drame",
+    "description": "La vie d'Elvis Presley, de son enfance pauvre à la gloire, vue à travers les yeux de son manager.",
+    "poster": "https://picsum.photos/seed/elvis/320/480",
+    "rating": 7.5
+  },
+  {
+    "title": "The Power of the Dog",
+    "year": 2021,
+    "genre": "Western",
+    "description": "Un éleveur charismatique et cruel tourmente la nouvelle femme de son frère dans le Montana des années 20.",
+    "poster": "https://picsum.photos/seed/powerofdog/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "Licorice Pizza",
+    "year": 2021,
+    "genre": "Romance",
+    "description": "Un lycéen entrepreneur et une jeune femme sans direction vivent une romance dans le Los Angeles des années 70.",
+    "poster": "https://picsum.photos/seed/licoricepizza/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "Spencer",
+    "year": 2021,
+    "genre": "Drame",
+    "description": "Trois jours de Noël à Sandringham pendant lesquels Diana décide de quitter le prince Charles.",
+    "poster": "https://picsum.photos/seed/spencer/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Drive My Car",
+    "year": 2021,
+    "genre": "Drame",
+    "description": "Un metteur en scène endeuillé engage une jeune conductrice tacite pendant qu'il monte une pièce de Tchekhov.",
+    "poster": "https://picsum.photos/seed/drivemycar/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "The French Dispatch",
+    "year": 2021,
+    "genre": "Comédie",
+    "description": "Un recueil d'histoires publiées dans le dernier numéro d'un magazine américain basé en France.",
+    "poster": "https://picsum.photos/seed/frenchdispatch/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "Nomadland",
+    "year": 2020,
+    "genre": "Drame",
+    "description": "Une femme prend la route dans son van après avoir tout perdu, vivant en nomade à travers l'Ouest américain.",
+    "poster": "https://picsum.photos/seed/nomadland/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "Minari",
+    "year": 2020,
+    "genre": "Drame",
+    "description": "Une famille coréenne s'installe dans l'Arkansas rural pour poursuivre le rêve américain dans les années 80.",
+    "poster": "https://picsum.photos/seed/minari/320/480",
+    "rating": 7.5
+  },
+  {
+    "title": "Sound of Metal",
+    "year": 2019,
+    "genre": "Drame",
+    "description": "Un batteur de heavy metal perd soudainement l'ouïe et doit réapprendre à vivre dans le silence.",
+    "poster": "https://picsum.photos/seed/soundofmetal/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "Parasite",
+    "year": 2019,
+    "genre": "Thriller",
+    "description": "La famille Kim infiltre la riche famille Park, mais un secret dans le sous-sol menace tout.",
+    "poster": "https://picsum.photos/seed/parasite2/320/480",
+    "rating": 8.5
+  },
+  {
+    "title": "1917",
+    "year": 2019,
+    "genre": "Guerre",
+    "description": "Deux soldats britanniques doivent traverser le territoire ennemi pour délivrer un message qui sauvera 1600 hommes.",
+    "poster": "https://picsum.photos/seed/1917/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Joker",
+    "year": 2019,
+    "genre": "Drame",
+    "description": "Un comédien raté et mentalement instable sombre dans la folie et la violence dans le Gotham des années 80.",
+    "poster": "https://picsum.photos/seed/joker/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "Once Upon a Time in Hollywood",
+    "year": 2019,
+    "genre": "Comédie",
+    "description": "Un acteur sur le déclin et sa doublure naviguent dans le Hollywood de 1969 à l'ombre des Manson.",
+    "poster": "https://picsum.photos/seed/onceuponhollywood/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Marriage Story",
+    "year": 2019,
+    "genre": "Drame",
+    "description": "Un couple qui s'aime encore traverse un divorce douloureux entre New York et Los Angeles.",
+    "poster": "https://picsum.photos/seed/marriagestory/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "The Lighthouse",
+    "year": 2019,
+    "genre": "Horreur",
+    "description": "Deux gardiens de phare isolés sur une île sombrent dans la folie et la paranoïa.",
+    "poster": "https://picsum.photos/seed/lighthouse/320/480",
+    "rating": 7.3
+  },
+  {
+    "title": "Uncut Gems",
+    "year": 2019,
+    "genre": "Thriller",
+    "description": "Un bijoutier new-yorkais accro au jeu fait un pari risqué qui pourrait le sauver ou le détruire.",
+    "poster": "https://picsum.photos/seed/uncutgems/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Knives Out",
+    "year": 2019,
+    "genre": "Crime",
+    "description": "Un détective enquête sur la mort d'un patriarche millionnaire entouré de sa famille cupide.",
+    "poster": "https://picsum.photos/seed/knivesout/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "The Favourite",
+    "year": 2018,
+    "genre": "Comédie",
+    "description": "Deux cousines rivalisent pour être la favorite de la reine Anne d'Angleterre au XVIIIe siècle.",
+    "poster": "https://picsum.photos/seed/favourite/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Roma",
+    "year": 2018,
+    "genre": "Drame",
+    "description": "La vie quotidienne d'une domestique dans une famille bourgeoise mexicaine au début des années 70.",
+    "poster": "https://picsum.photos/seed/roma2/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "Burning",
+    "year": 2018,
+    "genre": "Thriller",
+    "description": "Un aspirant écrivain coréen soupçonne le nouvel ami riche de son amie d'enfance d'être un tueur en série.",
+    "poster": "https://picsum.photos/seed/burning/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "Shoplifters",
+    "year": 2018,
+    "genre": "Drame",
+    "description": "Une famille de marginaux survit grâce au vol à l'étalage et recueille une enfant maltraitée.",
+    "poster": "https://picsum.photos/seed/shoplifters/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Cold War",
+    "year": 2018,
+    "genre": "Romance",
+    "description": "Un musicien et une chanteuse vivent un amour impossible entre la Pologne communiste et Paris.",
+    "poster": "https://picsum.photos/seed/coldwar/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Phantom Thread",
+    "year": 2017,
+    "genre": "Romance",
+    "description": "Un couturier perfectionniste de Londres dans les années 50 voit sa vie bouleversée par sa nouvelle muse.",
+    "poster": "https://picsum.photos/seed/phantomthread/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Call Me by Your Name",
+    "year": 2017,
+    "genre": "Romance",
+    "description": "Un adolescent italien vit un premier amour intense avec un étudiant américain pendant un été en Italie.",
+    "poster": "https://picsum.photos/seed/callmebyyourname/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "Lady Bird",
+    "year": 2017,
+    "genre": "Comédie",
+    "description": "Une lycéenne de Sacramento rêve de partir pour la côte Est et se heurte à sa mère.",
+    "poster": "https://picsum.photos/seed/ladybird/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Dunkirk",
+    "year": 2017,
+    "genre": "Guerre",
+    "description": "L'évacuation de 400 000 soldats alliés piégés sur les plages de Dunkerque en 1940.",
+    "poster": "https://picsum.photos/seed/dunkirk/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Get Out",
+    "year": 2017,
+    "genre": "Horreur",
+    "description": "Un jeune Noir visite la famille de sa copine blanche et découvre un complot raciste terrifiant.",
+    "poster": "https://picsum.photos/seed/getout2/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Blade Runner 2049",
+    "year": 2017,
+    "genre": "Science-Fiction",
+    "description": "Un blade runner découvre un secret qui pourrait plonger la société dans le chaos.",
+    "poster": "https://picsum.photos/seed/br2049/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "The Disaster Artist",
+    "year": 2017,
+    "genre": "Comédie",
+    "description": "L'histoire vraie de la création de The Room, considéré comme le pire film jamais fait.",
+    "poster": "https://picsum.photos/seed/disasterartist/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Baby Driver",
+    "year": 2017,
+    "genre": "Action",
+    "description": "Un jeune chauffeur surdoué veut quitter le monde du crime après un dernier braquage.",
+    "poster": "https://picsum.photos/seed/babydriver/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "Arrival",
+    "year": 2016,
+    "genre": "Science-Fiction",
+    "description": "Une linguiste tente de déchiffrer le langage d'extraterrestres qui modifie sa perception du temps.",
+    "poster": "https://picsum.photos/seed/arrival2/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Hacksaw Ridge",
+    "year": 2016,
+    "genre": "Guerre",
+    "description": "Un objecteur de conscience sauve 75 soldats lors de la bataille d'Okinawa sans porter d'arme.",
+    "poster": "https://picsum.photos/seed/hacksawridge/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "The Handmaiden",
+    "year": 2016,
+    "genre": "Thriller",
+    "description": "Un escroc utilise une jeune pickpocket pour séduire une héritière japonaise, mais le plan se complique.",
+    "poster": "https://picsum.photos/seed/handmaiden2/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "The Lobster",
+    "year": 2015,
+    "genre": "Science-Fiction",
+    "description": "Dans une société où les célibataires sont transformés en animaux, un homme tente de trouver l'amour.",
+    "poster": "https://picsum.photos/seed/thelobster/320/480",
+    "rating": 7.5
+  },
+  {
+    "title": "Room",
+    "year": 2015,
+    "genre": "Drame",
+    "description": "Une mère et son fils de 5 ans s'échappent de la pièce où ils étaient séquestrés depuis des années.",
+    "poster": "https://picsum.photos/seed/room/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Spotlight",
+    "year": 2015,
+    "genre": "Drame",
+    "description": "Des journalistes du Boston Globe exposent un scandale d'abus sexuels couverts par l'Église catholique.",
+    "poster": "https://picsum.photos/seed/spotlight2/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "Carol",
+    "year": 2015,
+    "genre": "Romance",
+    "description": "Dans les années 50 à New York, une jeune vendeuse et une femme élégante vivent un amour interdit.",
+    "poster": "https://picsum.photos/seed/carol/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Inside Out",
+    "year": 2015,
+    "genre": "Animation",
+    "description": "Les émotions d'une fillette de 11 ans doivent coopérer lorsque sa famille déménage à San Francisco.",
+    "poster": "https://picsum.photos/seed/insideout2/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Fury",
+    "year": 2014,
+    "genre": "Guerre",
+    "description": "Un équipage de char Sherman avance en Allemagne nazie dans les derniers jours de la Seconde Guerre mondiale.",
+    "poster": "https://picsum.photos/seed/fury/320/480",
+    "rating": 7.3
+  },
+  {
+    "title": "Foxcatcher",
+    "year": 2014,
+    "genre": "Drame",
+    "description": "Un milliardaire excentrique parraine une équipe olympique de lutte avec des motifs troublants.",
+    "poster": "https://picsum.photos/seed/foxcatcher/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "Under the Skin",
+    "year": 2013,
+    "genre": "Science-Fiction",
+    "description": "Une extraterrestre sous forme humaine séduit des hommes en Écosse pour les absorber.",
+    "poster": "https://picsum.photos/seed/undertheskin/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Gravity",
+    "year": 2013,
+    "genre": "Science-Fiction",
+    "description": "Une astronaute dérive seule dans l'espace après la destruction de sa navette par des débris.",
+    "poster": "https://picsum.photos/seed/gravity/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "Her",
+    "year": 2013,
+    "genre": "Science-Fiction",
+    "description": "Un homme solitaire développe une relation amoureuse avec son système d'exploitation à intelligence artificielle.",
+    "poster": "https://picsum.photos/seed/her2/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "The Hunt",
+    "year": 2012,
+    "genre": "Drame",
+    "description": "Un enseignant danois est faussement accusé d'abus sur un enfant et devient un paria dans sa communauté.",
+    "poster": "https://picsum.photos/seed/thehunt/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "Amour",
+    "year": 2012,
+    "genre": "Drame",
+    "description": "Un couple d'octogénaires parisiens affronte la dégradation de santé de la femme avec dignité.",
+    "poster": "https://picsum.photos/seed/amour2/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Django Unchained",
+    "year": 2012,
+    "genre": "Western",
+    "description": "Un esclave libéré et un chasseur de primes traquent les propriétaires cruels de sa femme.",
+    "poster": "https://picsum.photos/seed/django2/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "The Master",
+    "year": 2012,
+    "genre": "Drame",
+    "description": "Un vétéran perturbé de la Seconde Guerre mondiale tombe sous l'influence d'un leader charismatique d'un mouvement religieux.",
+    "poster": "https://picsum.photos/seed/themaster/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "Beasts of the Southern Wild",
+    "year": 2012,
+    "genre": "Drame",
+    "description": "Une fillette de 6 ans dans un bayou de Louisiane affronte un monde qui s'effondre avec courage.",
+    "poster": "https://picsum.photos/seed/beastssouthernwild/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Skyfall",
+    "year": 2012,
+    "genre": "Action",
+    "description": "James Bond fait face à un ancien agent du MI6 devenu cyberterroriste qui vise M personnellement.",
+    "poster": "https://picsum.photos/seed/skyfall/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "The Tree of Life",
+    "year": 2011,
+    "genre": "Drame",
+    "description": "Un homme se remémore son enfance au Texas des années 50, entre un père strict et une mère aimante.",
+    "poster": "https://picsum.photos/seed/treeoflife/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "Shame",
+    "year": 2011,
+    "genre": "Drame",
+    "description": "Un cadre new-yorkais souffrant d'addiction sexuelle voit sa routine perturbée par l'arrivée de sa sœur.",
+    "poster": "https://picsum.photos/seed/shame/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Melancholia",
+    "year": 2011,
+    "genre": "Science-Fiction",
+    "description": "Deux sœurs affrontent la fin du monde alors qu'une planète géante se dirige vers la Terre.",
+    "poster": "https://picsum.photos/seed/melancholia/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "A Separation",
+    "year": 2011,
+    "genre": "Drame",
+    "description": "Un couple iranien se déchire autour du départ ou non du pays, avec des conséquences en cascade.",
+    "poster": "https://picsum.photos/seed/separation2/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "The Skin I Live In",
+    "year": 2011,
+    "genre": "Thriller",
+    "description": "Un chirurgien plasticien crée une peau synthétique et l'expérimente sur une prisonnière mystérieuse.",
+    "poster": "https://picsum.photos/seed/skinilivein/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Incendies",
+    "year": 2010,
+    "genre": "Drame",
+    "description": "Des jumeaux canadiens partent au Moyen-Orient découvrir le passé tragique de leur mère récemment décédée.",
+    "poster": "https://picsum.photos/seed/incendies2/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "Blue Valentine",
+    "year": 2010,
+    "genre": "Romance",
+    "description": "L'histoire d'un couple racontée en parallèle : leur rencontre passionnée et leur mariage qui s'effondre.",
+    "poster": "https://picsum.photos/seed/bluevalentine/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "127 Hours",
+    "year": 2010,
+    "genre": "Aventure",
+    "description": "Un randonneur se retrouve coincé par un rocher dans un canyon et doit prendre une décision extrême pour survivre.",
+    "poster": "https://picsum.photos/seed/127hours/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "The King's Speech",
+    "year": 2010,
+    "genre": "Drame",
+    "description": "Le futur roi George VI surmonte son bégaiement avec l'aide d'un orthophoniste peu conventionnel.",
+    "poster": "https://picsum.photos/seed/kingsspeech/320/480",
+    "rating": 7.5
+  },
+  {
+    "title": "Toy Story 3",
+    "year": 2010,
+    "genre": "Animation",
+    "description": "Andy part à l'université et ses jouets finissent dans une garderie dirigée par un ours tyrannique.",
+    "poster": "https://picsum.photos/seed/toystory32/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Scott Pilgrim vs. the World",
+    "year": 2010,
+    "genre": "Action",
+    "description": "Un musicien doit vaincre les sept ex maléfiques de la fille dont il est tombé amoureux.",
+    "poster": "https://picsum.photos/seed/scottpilgrim/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Inglourious Basterds",
+    "year": 2009,
+    "genre": "Guerre",
+    "description": "Un commando juif américain et une propriétaire de cinéma française planifient chacun de leur côté de tuer les dirigeants nazis.",
+    "poster": "https://picsum.photos/seed/basterds2/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "Up",
+    "year": 2009,
+    "genre": "Animation",
+    "description": "Un veuf de 78 ans attache des milliers de ballons à sa maison pour s'envoler vers l'Amérique du Sud.",
+    "poster": "https://picsum.photos/seed/up2/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "An Education",
+    "year": 2009,
+    "genre": "Drame",
+    "description": "Une lycéenne brillante dans les années 60 est séduite par un homme plus âgé au charme douteux.",
+    "poster": "https://picsum.photos/seed/aneducation/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "A Serious Man",
+    "year": 2009,
+    "genre": "Comédie",
+    "description": "Un professeur de physique juif voit sa vie s'effondrer et cherche des réponses auprès de rabbins.",
+    "poster": "https://picsum.photos/seed/seriousman/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "In Bruges",
+    "year": 2008,
+    "genre": "Crime",
+    "description": "Deux tueurs à gages sont envoyés à Bruges après un contrat raté, l'un adore la ville, l'autre la déteste.",
+    "poster": "https://picsum.photos/seed/inbruges/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "WALL-E",
+    "year": 2008,
+    "genre": "Animation",
+    "description": "Un petit robot solitaire nettoie la Terre abandonnée et tombe amoureux d'une sonde spatiale.",
+    "poster": "https://picsum.photos/seed/walle2/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "The Wrestler",
+    "year": 2008,
+    "genre": "Drame",
+    "description": "Un catcheur vieillissant tente de reconstruire sa vie en dehors du ring.",
+    "poster": "https://picsum.photos/seed/wrestler/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Slumdog Millionaire",
+    "year": 2008,
+    "genre": "Drame",
+    "description": "Un orphelin des bidonvilles de Mumbai est accusé de tricher au jeu télévisé qui pourrait changer sa vie.",
+    "poster": "https://picsum.photos/seed/slumdog/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "The Curious Case of Benjamin Button",
+    "year": 2008,
+    "genre": "Drame",
+    "description": "Un homme né vieux rajeunit au fil du temps, vivant l'amour et la perte à rebours.",
+    "poster": "https://picsum.photos/seed/benjaminbutton/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Let the Right One In",
+    "year": 2008,
+    "genre": "Horreur",
+    "description": "Un garçon solitaire et harcelé se lie d'amitié avec sa nouvelle voisine, une vampiresse centenaire.",
+    "poster": "https://picsum.photos/seed/letrightonein/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "The Diving Bell and the Butterfly",
+    "year": 2007,
+    "genre": "Drame",
+    "description": "Un rédacteur en chef paralysé communique uniquement par le clignement d'un œil et écrit ses mémoires.",
+    "poster": "https://picsum.photos/seed/divingbell/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Into the Wild",
+    "year": 2007,
+    "genre": "Aventure",
+    "description": "Un jeune diplômé abandonne tout pour vivre en ermite dans la nature sauvage d'Alaska.",
+    "poster": "https://picsum.photos/seed/intothewild/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Ratatouille",
+    "year": 2007,
+    "genre": "Animation",
+    "description": "Un rat qui rêve de devenir chef cuisinier s'associe à un jeune marmiton dans un restaurant parisien.",
+    "poster": "https://picsum.photos/seed/ratatouille2/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Superbad",
+    "year": 2007,
+    "genre": "Comédie",
+    "description": "Deux ados inséparables essaient d'acheter de l'alcool pour impressionner des filles avant la fin du lycée.",
+    "poster": "https://picsum.photos/seed/superbad2/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Zodiac",
+    "year": 2007,
+    "genre": "Thriller",
+    "description": "Un dessinateur de presse et un inspecteur deviennent obsédés par l'affaire du tueur du Zodiaque.",
+    "poster": "https://picsum.photos/seed/zodiac2/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "The Assassination of Jesse James",
+    "year": 2007,
+    "genre": "Western",
+    "description": "L'histoire des derniers jours de Jesse James et de Robert Ford, le lâche qui l'a tué.",
+    "poster": "https://picsum.photos/seed/jessejames/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "Hot Fuzz",
+    "year": 2007,
+    "genre": "Comédie",
+    "description": "Un policier londonien trop zélé est muté dans un village tranquille qui cache de sombres secrets.",
+    "poster": "https://picsum.photos/seed/hotfuzz/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Children of Men",
+    "year": 2006,
+    "genre": "Science-Fiction",
+    "description": "Dans un monde sans naissances depuis 18 ans, un homme doit protéger la dernière femme enceinte.",
+    "poster": "https://picsum.photos/seed/childrenofmen2/320/480",
+    "rating": 7.5
+  },
+  {
+    "title": "The Lives of Others",
+    "year": 2006,
+    "genre": "Drame",
+    "description": "Un agent de la Stasi en RDA surveille un dramaturge et commence à sympathiser avec sa cible.",
+    "poster": "https://picsum.photos/seed/livesofothers2/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Blood Diamond",
+    "year": 2006,
+    "genre": "Aventure",
+    "description": "Un mercenaire et un pêcheur cherchent un diamant rose dans la Sierra Leone en guerre civile.",
+    "poster": "https://picsum.photos/seed/blooddiamond/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Casino Royale",
+    "year": 2006,
+    "genre": "Action",
+    "description": "James Bond gagne son statut d'agent 00 et affronte un financier du terrorisme au poker.",
+    "poster": "https://picsum.photos/seed/casinoroyale/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "The Departed",
+    "year": 2006,
+    "genre": "Crime",
+    "description": "Un infiltré dans la mafia et un infiltré dans la police se traquent mutuellement à Boston.",
+    "poster": "https://picsum.photos/seed/departed2/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "Brokeback Mountain",
+    "year": 2005,
+    "genre": "Romance",
+    "description": "Deux cow-boys vivent une histoire d'amour secrète sur vingt ans dans l'Amérique rurale.",
+    "poster": "https://picsum.photos/seed/brokebackmountain/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "A History of Violence",
+    "year": 2005,
+    "genre": "Thriller",
+    "description": "Un cafetier de petite ville est propulsé sous les projecteurs après avoir tué deux braqueurs.",
+    "poster": "https://picsum.photos/seed/historyviolence/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "Batman Begins",
+    "year": 2005,
+    "genre": "Action",
+    "description": "Bruce Wayne voyage le monde pour comprendre la criminalité avant de devenir Batman.",
+    "poster": "https://picsum.photos/seed/batmanbegins/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Sin City",
+    "year": 2005,
+    "genre": "Crime",
+    "description": "Des histoires violentes et stylisées se croisent dans une ville corrompue en noir et blanc.",
+    "poster": "https://picsum.photos/seed/sincity/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Crash",
+    "year": 2004,
+    "genre": "Drame",
+    "description": "Les vies de personnages d'origines différentes s'entrechoquent à Los Angeles sur fond de tensions raciales.",
+    "poster": "https://picsum.photos/seed/crash/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Million Dollar Baby",
+    "year": 2004,
+    "genre": "Drame",
+    "description": "Un entraîneur de boxe réticent accepte d'entraîner une serveuse de 31 ans qui rêve de devenir championne.",
+    "poster": "https://picsum.photos/seed/milliondollarbaby/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "The Aviator",
+    "year": 2004,
+    "genre": "Drame",
+    "description": "La vie de Howard Hughes, aviateur, cinéaste et milliardaire excentrique qui sombra dans la folie.",
+    "poster": "https://picsum.photos/seed/aviator/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Shaun of the Dead",
+    "year": 2004,
+    "genre": "Comédie",
+    "description": "Un trentenaire velléitaire doit sauver ses proches lors d'une invasion de zombies à Londres.",
+    "poster": "https://picsum.photos/seed/shaunofthedead/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "Downfall",
+    "year": 2004,
+    "genre": "Guerre",
+    "description": "Les derniers jours d'Hitler dans son bunker à Berlin en avril 1945.",
+    "poster": "https://picsum.photos/seed/downfall/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "Oldboy",
+    "year": 2003,
+    "genre": "Thriller",
+    "description": "Un homme kidnappé et enfermé 15 ans est libéré sans explication et cherche des réponses.",
+    "poster": "https://picsum.photos/seed/oldboy3/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "Lost in Translation",
+    "year": 2003,
+    "genre": "Romance",
+    "description": "Un acteur vieillissant et une jeune femme se trouvent dans un Tokyo insomniaque.",
+    "poster": "https://picsum.photos/seed/lostintranslation2/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "Finding Nemo",
+    "year": 2003,
+    "genre": "Animation",
+    "description": "Un poisson-clown surprotecteur traverse l'océan pour retrouver son fils enlevé.",
+    "poster": "https://picsum.photos/seed/nemo2/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "28 Days Later",
+    "year": 2002,
+    "genre": "Horreur",
+    "description": "Un homme se réveille d'un coma dans un Londres déserté par un virus de rage.",
+    "poster": "https://picsum.photos/seed/28dayslater/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Catch Me If You Can",
+    "year": 2002,
+    "genre": "Crime",
+    "description": "Un adolescent surdoué arnaque des millions en se faisant passer pour pilote, médecin et avocat.",
+    "poster": "https://picsum.photos/seed/catchmeifyoucan/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "The Bourne Identity",
+    "year": 2002,
+    "genre": "Action",
+    "description": "Un homme amnésique repêché en mer découvre qu'il est un assassin de la CIA.",
+    "poster": "https://picsum.photos/seed/bourneidentity/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Minority Report",
+    "year": 2002,
+    "genre": "Science-Fiction",
+    "description": "Dans un futur où les crimes sont prédits, un policier est lui-même accusé d'un futur meurtre.",
+    "poster": "https://picsum.photos/seed/minorityreport/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Road to Perdition",
+    "year": 2002,
+    "genre": "Crime",
+    "description": "Un tueur à gages en fuite avec son fils traverse l'Amérique de la Dépression pour se venger.",
+    "poster": "https://picsum.photos/seed/roadtoperdition/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Adaptation",
+    "year": 2002,
+    "genre": "Comédie",
+    "description": "Un scénariste en panne d'inspiration tente d'adapter un livre sur les orchidées en film.",
+    "poster": "https://picsum.photos/seed/adaptation/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Talk to Her",
+    "year": 2002,
+    "genre": "Drame",
+    "description": "Deux hommes se lient d'amitié en veillant sur des femmes dans le coma.",
+    "poster": "https://picsum.photos/seed/talktoher/320/480",
+    "rating": 7.3
+  },
+  {
+    "title": "Mulholland Drive",
+    "year": 2001,
+    "genre": "Thriller",
+    "description": "Une amnésique et une aspirante actrice enquêtent sur un mystère dans un Hollywood surréaliste.",
+    "poster": "https://picsum.photos/seed/mulholland2/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "Shrek",
+    "year": 2001,
+    "genre": "Animation",
+    "description": "Un ogre solitaire doit sauver une princesse pour récupérer son marais envahi de contes de fées.",
+    "poster": "https://picsum.photos/seed/shrek/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Training Day",
+    "year": 2001,
+    "genre": "Crime",
+    "description": "Un jeune policier passe sa première journée avec un détective corrompu dans les rues de Los Angeles.",
+    "poster": "https://picsum.photos/seed/trainingday/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "Monster's Ball",
+    "year": 2001,
+    "genre": "Drame",
+    "description": "Un gardien de prison raciste et la veuve d'un condamné qu'il a exécuté trouvent un réconfort improbable ensemble.",
+    "poster": "https://picsum.photos/seed/monstersball/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Amores Perros",
+    "year": 2000,
+    "genre": "Drame",
+    "description": "Trois histoires de violence et d'amour se croisent après un accident de voiture à Mexico.",
+    "poster": "https://picsum.photos/seed/amoresperros2/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "Crouching Tiger, Hidden Dragon",
+    "year": 2000,
+    "genre": "Action",
+    "description": "Deux guerriers poursuivent une épée volée et une combattante rebelle dans la Chine ancienne.",
+    "poster": "https://picsum.photos/seed/crouchingtiger/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Almost Famous",
+    "year": 2000,
+    "genre": "Comédie",
+    "description": "Un adolescent de 15 ans devient journaliste de rock en tournée avec un groupe dans les années 70.",
+    "poster": "https://picsum.photos/seed/almostfamous/320/480",
+    "rating": 6.8
+  },
+  {
+    "title": "O Brother, Where Art Thou?",
+    "year": 2000,
+    "genre": "Comédie",
+    "description": "Trois évadés de prison traversent le Mississippi des années 30 dans une odyssée loufoque.",
+    "poster": "https://picsum.photos/seed/obrother/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "Battle Royale",
+    "year": 2000,
+    "genre": "Action",
+    "description": "Une classe de lycéens est envoyée sur une île où ils doivent s'entretuer jusqu'au dernier survivant.",
+    "poster": "https://picsum.photos/seed/battleroyale/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "The Talented Mr. Ripley",
+    "year": 1999,
+    "genre": "Thriller",
+    "description": "Un jeune homme sans le sou usurpe l'identité d'un riche Américain en Italie.",
+    "poster": "https://picsum.photos/seed/talentedripley/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Office Space",
+    "year": 1999,
+    "genre": "Comédie",
+    "description": "Un programmeur décide de ne plus rien faire au travail et paradoxalement monte en grade.",
+    "poster": "https://picsum.photos/seed/officespace/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Being John Malkovich",
+    "year": 1999,
+    "genre": "Comédie",
+    "description": "Un employé de bureau découvre un portail qui mène dans la tête de l'acteur John Malkovich.",
+    "poster": "https://picsum.photos/seed/beingjohnmalkovich/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "The Iron Giant",
+    "year": 1999,
+    "genre": "Animation",
+    "description": "Un garçon se lie d'amitié avec un robot géant venu de l'espace pendant la Guerre froide.",
+    "poster": "https://picsum.photos/seed/irongiant/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "Election",
+    "year": 1999,
+    "genre": "Comédie",
+    "description": "Un professeur de lycée sabote l'élection scolaire d'une élève ambitieuse qu'il ne supporte pas.",
+    "poster": "https://picsum.photos/seed/election/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Rushmore",
+    "year": 1998,
+    "genre": "Comédie",
+    "description": "Un lycéen excentrique et un magnat déprimé rivalisent pour les faveurs d'une institutrice.",
+    "poster": "https://picsum.photos/seed/rushmore/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Run Lola Run",
+    "year": 1998,
+    "genre": "Thriller",
+    "description": "Lola a 20 minutes pour trouver 100 000 marks et sauver son petit ami. Trois scénarios possibles.",
+    "poster": "https://picsum.photos/seed/runlolarun/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Pi",
+    "year": 1998,
+    "genre": "Thriller",
+    "description": "Un mathématicien paranoïaque croit avoir trouvé un nombre qui prédit les marchés et la Torah.",
+    "poster": "https://picsum.photos/seed/pi/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Dark City",
+    "year": 1998,
+    "genre": "Science-Fiction",
+    "description": "Un homme amnésique découvre que la ville où il vit est contrôlée par des êtres qui modifient la réalité chaque nuit.",
+    "poster": "https://picsum.photos/seed/darkcity/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "The Thin Red Line",
+    "year": 1998,
+    "genre": "Guerre",
+    "description": "La bataille de Guadalcanal vue à travers les réflexions philosophiques de plusieurs soldats.",
+    "poster": "https://picsum.photos/seed/thinredline/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Gattaca",
+    "year": 1997,
+    "genre": "Science-Fiction",
+    "description": "Dans un futur eugéniste, un homme génétiquement imparfait usurpe une identité pour devenir astronaute.",
+    "poster": "https://picsum.photos/seed/gattaca/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "The Game",
+    "year": 1997,
+    "genre": "Thriller",
+    "description": "Un banquier milliardaire reçoit un cadeau d'anniversaire mystérieux : un jeu qui envahit sa vie réelle.",
+    "poster": "https://picsum.photos/seed/thegame/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Jackie Brown",
+    "year": 1997,
+    "genre": "Crime",
+    "description": "Une hôtesse de l'air piégée entre un trafiquant d'armes et le FBI planifie un coup pour tout garder.",
+    "poster": "https://picsum.photos/seed/jackiebrown/320/480",
+    "rating": 7.5
+  },
+  {
+    "title": "Starship Troopers",
+    "year": 1997,
+    "genre": "Science-Fiction",
+    "description": "Des jeunes soldats combattent des insectes géants extraterrestres dans une satire militariste.",
+    "poster": "https://picsum.photos/seed/starshiptroopers/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "The Fifth Element",
+    "year": 1997,
+    "genre": "Science-Fiction",
+    "description": "Un chauffeur de taxi du futur doit protéger une femme parfaite qui est la clé pour sauver la Terre.",
+    "poster": "https://picsum.photos/seed/fifthelement/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Scream",
+    "year": 1996,
+    "genre": "Horreur",
+    "description": "Un tueur masqué terrorise des lycéens obsédés par les films d'horreur.",
+    "poster": "https://picsum.photos/seed/scream/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Sling Blade",
+    "year": 1996,
+    "genre": "Drame",
+    "description": "Un homme simple libéré d'un asile après avoir tué sa mère se lie d'amitié avec un garçon et sa mère.",
+    "poster": "https://picsum.photos/seed/slingblade/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "The English Patient",
+    "year": 1996,
+    "genre": "Romance",
+    "description": "Une infirmière soigne un homme brûlé qui raconte son histoire d'amour impossible dans le Sahara.",
+    "poster": "https://picsum.photos/seed/englishpatient/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Primal Fear",
+    "year": 1996,
+    "genre": "Thriller",
+    "description": "Un avocat arrogant défend un enfant de chœur accusé du meurtre d'un archevêque.",
+    "poster": "https://picsum.photos/seed/primalfear/320/480",
+    "rating": 6.8
+  },
+  {
+    "title": "Twelve Monkeys",
+    "year": 1995,
+    "genre": "Science-Fiction",
+    "description": "Un prisonnier est envoyé dans le passé pour prévenir une pandémie qui a décimé l'humanité.",
+    "poster": "https://picsum.photos/seed/twelvemonkeys/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "Braveheart",
+    "year": 1995,
+    "genre": "Aventure",
+    "description": "William Wallace mène la révolte des Écossais contre le roi d'Angleterre au XIIIe siècle.",
+    "poster": "https://picsum.photos/seed/braveheart/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Toy Story",
+    "year": 1995,
+    "genre": "Animation",
+    "description": "Un cowboy jouet jaloux doit s'allier à un nouveau jouet astronaute pour retrouver leur propriétaire.",
+    "poster": "https://picsum.photos/seed/toystory2/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Before Sunrise",
+    "year": 1995,
+    "genre": "Romance",
+    "description": "Un Américain et une Française se rencontrent dans un train et passent la nuit à Vienne.",
+    "poster": "https://picsum.photos/seed/beforesunrise2/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "The Crow",
+    "year": 1994,
+    "genre": "Action",
+    "description": "Un musicien ressuscité d'entre les morts traque les hommes qui l'ont tué lui et sa fiancée.",
+    "poster": "https://picsum.photos/seed/thecrow/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "Natural Born Killers",
+    "year": 1994,
+    "genre": "Crime",
+    "description": "Un couple de tueurs en série devient célèbre grâce à la couverture médiatique de leurs crimes.",
+    "poster": "https://picsum.photos/seed/naturalbornkillers/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Speed",
+    "year": 1994,
+    "genre": "Action",
+    "description": "Un policier doit maintenir un bus au-dessus de 80 km/h sous peine qu'une bombe n'explose.",
+    "poster": "https://picsum.photos/seed/speed/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "True Romance",
+    "year": 1993,
+    "genre": "Crime",
+    "description": "Un vendeur de comics et une call-girl fuient vers Hollywood avec une valise de cocaïne volée à la mafia.",
+    "poster": "https://picsum.photos/seed/trueromance/320/480",
+    "rating": 6.8
+  },
+  {
+    "title": "Philadelphia",
+    "year": 1993,
+    "genre": "Drame",
+    "description": "Un avocat licencié pour être atteint du SIDA engage un avocat homophobe pour le défendre.",
+    "poster": "https://picsum.photos/seed/philadelphia/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Dazed and Confused",
+    "year": 1993,
+    "genre": "Comédie",
+    "description": "Le dernier jour de lycée en 1976 au Texas, entre bizutage, fêtes et questionnements existentiels.",
+    "poster": "https://picsum.photos/seed/dazedconfused/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Unforgiven",
+    "year": 1992,
+    "genre": "Western",
+    "description": "Un ancien tueur devenu fermier reprend les armes pour une dernière mission de vengeance.",
+    "poster": "https://picsum.photos/seed/unforgiven/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Basic Instinct",
+    "year": 1992,
+    "genre": "Thriller",
+    "description": "Un inspecteur enquête sur une romancière suspecte d'un meurtre similaire à ceux de ses livres.",
+    "poster": "https://picsum.photos/seed/basicinstinct/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Bram Stoker's Dracula",
+    "year": 1992,
+    "genre": "Horreur",
+    "description": "Le comte Dracula voyage à Londres en quête de la réincarnation de son amour perdu.",
+    "poster": "https://picsum.photos/seed/dracula1992/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Thelma & Louise",
+    "year": 1991,
+    "genre": "Aventure",
+    "description": "Deux amies en escapade tuent un agresseur et deviennent des fugitives poursuivies par le FBI.",
+    "poster": "https://picsum.photos/seed/thelmalouise/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Point Break",
+    "year": 1991,
+    "genre": "Action",
+    "description": "Un agent du FBI infiltre un groupe de surfeurs braqueurs de banques.",
+    "poster": "https://picsum.photos/seed/pointbreak/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "Edward Scissorhands",
+    "year": 1990,
+    "genre": "Fantaisie",
+    "description": "Un homme créé artificiellement avec des ciseaux à la place des mains est adopté par une famille de banlieue.",
+    "poster": "https://picsum.photos/seed/edwardscissorhands/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "Dances with Wolves",
+    "year": 1990,
+    "genre": "Western",
+    "description": "Un soldat de l'Union se lie d'amitié avec une tribu Sioux à la frontière américaine.",
+    "poster": "https://picsum.photos/seed/danceswithwolves/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Misery",
+    "year": 1990,
+    "genre": "Horreur",
+    "description": "Un auteur blessé est secouru par sa fan numéro un qui le séquestre pour qu'il écrive la suite de son roman.",
+    "poster": "https://picsum.photos/seed/misery/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Jacob's Ladder",
+    "year": 1990,
+    "genre": "Horreur",
+    "description": "Un vétéran du Vietnam est hanté par des visions cauchemardesques et ne sait plus ce qui est réel.",
+    "poster": "https://picsum.photos/seed/jacobsladder/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "When Harry Met Sally",
+    "year": 1989,
+    "genre": "Romance",
+    "description": "Deux amis débattent pendant des années de la possibilité d'une amitié homme-femme sans romance.",
+    "poster": "https://picsum.photos/seed/harrymetsally/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Do the Right Thing",
+    "year": 1989,
+    "genre": "Drame",
+    "description": "Les tensions raciales montent lors de la journée la plus chaude de l'été dans un quartier de Brooklyn.",
+    "poster": "https://picsum.photos/seed/dotherightthing/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "My Left Foot",
+    "year": 1989,
+    "genre": "Drame",
+    "description": "L'histoire de Christy Brown, un artiste atteint de paralysie cérébrale qui ne contrôle que son pied gauche.",
+    "poster": "https://picsum.photos/seed/myleftfoot/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "The Princess Bride",
+    "year": 1987,
+    "genre": "Aventure",
+    "description": "Un jeune homme doit sauver sa bien-aimée d'un mariage forcé avec un prince cruel.",
+    "poster": "https://picsum.photos/seed/princessbride/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Stand by Me",
+    "year": 1986,
+    "genre": "Drame",
+    "description": "Quatre garçons de 12 ans partent à la recherche du cadavre d'un adolescent disparu.",
+    "poster": "https://picsum.photos/seed/standbyme/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "Blue Velvet",
+    "year": 1986,
+    "genre": "Thriller",
+    "description": "La découverte d'une oreille coupée entraîne un jeune homme dans les dessous sordides de sa ville.",
+    "poster": "https://picsum.photos/seed/bluevelvet2/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "Brazil",
+    "year": 1985,
+    "genre": "Science-Fiction",
+    "description": "Un bureaucrate rêveur tente d'échapper à un État totalitaire absurde dans un futur dystopique.",
+    "poster": "https://picsum.photos/seed/brazil/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Witness",
+    "year": 1985,
+    "genre": "Thriller",
+    "description": "Un détective se cache dans une communauté Amish pour protéger un garçon témoin d'un meurtre.",
+    "poster": "https://picsum.photos/seed/witness/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "Amadeus",
+    "year": 1984,
+    "genre": "Drame",
+    "description": "Le compositeur Salieri raconte sa rivalité obsessionnelle avec le génie Mozart à la cour de Vienne.",
+    "poster": "https://picsum.photos/seed/amadeus/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "This Is Spinal Tap",
+    "year": 1984,
+    "genre": "Comédie",
+    "description": "Un faux documentaire suit la tournée catastrophique d'un groupe de heavy metal britannique.",
+    "poster": "https://picsum.photos/seed/spinaltap/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Paris, Texas",
+    "year": 1984,
+    "genre": "Drame",
+    "description": "Un homme amnésique réapparaît après quatre ans d'errance dans le désert et tente de retrouver sa famille.",
+    "poster": "https://picsum.photos/seed/paristexas/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "Once Upon a Time in America",
+    "year": 1984,
+    "genre": "Crime",
+    "description": "La vie de gangsters juifs à New York, de la prohibition aux années 60, entre amitié et trahison.",
+    "poster": "https://picsum.photos/seed/onceuponamerica/320/480",
+    "rating": 8.3
+  },
+  {
+    "title": "Blade Runner",
+    "year": 1982,
+    "genre": "Science-Fiction",
+    "description": "Un chasseur d'androïdes dans un Los Angeles pluvieux de 2019 remet en question sa propre humanité.",
+    "poster": "https://picsum.photos/seed/bladerunner2/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Gandhi",
+    "year": 1982,
+    "genre": "Drame",
+    "description": "La vie du Mahatma Gandhi, de jeune avocat en Afrique du Sud à leader de l'indépendance indienne.",
+    "poster": "https://picsum.photos/seed/gandhi/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Raging Bull",
+    "year": 1980,
+    "genre": "Drame",
+    "description": "La vie autodestructrice du boxeur Jake LaMotta, entre violence sur le ring et dans sa vie privée.",
+    "poster": "https://picsum.photos/seed/ragingbull/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Airplane!",
+    "year": 1980,
+    "genre": "Comédie",
+    "description": "Un ancien pilote traumatisé doit reprendre les commandes d'un avion après l'intoxication de l'équipage.",
+    "poster": "https://picsum.photos/seed/airplane/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "The Elephant Man",
+    "year": 1980,
+    "genre": "Drame",
+    "description": "Un médecin victorien prend sous sa protection un homme horriblement déformé exhibé dans une foire.",
+    "poster": "https://picsum.photos/seed/elephantman/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "Monty Python's Life of Brian",
+    "year": 1979,
+    "genre": "Comédie",
+    "description": "Un homme né le même jour que Jésus est pris à tort pour le Messie.",
+    "poster": "https://picsum.photos/seed/lifeofbrian/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "Manhattan",
+    "year": 1979,
+    "genre": "Romance",
+    "description": "Un auteur de sitcom à New York jongle entre ses relations amoureuses et ses insécurités.",
+    "poster": "https://picsum.photos/seed/manhattan/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Annie Hall",
+    "year": 1977,
+    "genre": "Romance",
+    "description": "Un comédien new-yorkais névrosé analyse l'échec de sa relation avec une femme libre d'esprit.",
+    "poster": "https://picsum.photos/seed/anniehall/320/480",
+    "rating": 6.8
+  },
+  {
+    "title": "Close Encounters of the Third Kind",
+    "year": 1977,
+    "genre": "Science-Fiction",
+    "description": "Un électricien obsédé par des visions mystérieuses est attiré vers un lieu de rendez-vous extraterrestre.",
+    "poster": "https://picsum.photos/seed/closeencounters/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "Rocky",
+    "year": 1976,
+    "genre": "Drame",
+    "description": "Un boxeur inconnu de Philadelphie obtient une chance de combattre le champion du monde.",
+    "poster": "https://picsum.photos/seed/rocky/320/480",
+    "rating": 7.3
+  },
+  {
+    "title": "Monty Python and the Holy Grail",
+    "year": 1975,
+    "genre": "Comédie",
+    "description": "Le roi Arthur et ses chevaliers partent en quête du Saint Graal dans une aventure absurde.",
+    "poster": "https://picsum.photos/seed/holygrail/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Dog Day Afternoon",
+    "year": 1975,
+    "genre": "Crime",
+    "description": "Un braquage de banque improvisé à Brooklyn tourne au siège médiatique surréaliste.",
+    "poster": "https://picsum.photos/seed/dogday2/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "The Sting",
+    "year": 1973,
+    "genre": "Crime",
+    "description": "Deux arnaqueurs montent une escroquerie élaborée pour venger la mort de leur ami.",
+    "poster": "https://picsum.photos/seed/thesting/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "The Wicker Man",
+    "year": 1973,
+    "genre": "Horreur",
+    "description": "Un policier chrétien enquête sur une disparition sur une île écossaise aux pratiques païennes.",
+    "poster": "https://picsum.photos/seed/wickerman/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "Deliverance",
+    "year": 1972,
+    "genre": "Thriller",
+    "description": "Quatre amis en canoë dans les Appalaches sont confrontés à la violence de la nature et des hommes.",
+    "poster": "https://picsum.photos/seed/deliverance/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Solaris",
+    "year": 1972,
+    "genre": "Science-Fiction",
+    "description": "Un scientifique envoyé sur une station spatiale découvre que l'océan de Solaris matérialise ses souvenirs.",
+    "poster": "https://picsum.photos/seed/solaris2/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "Willy Wonka & the Chocolate Factory",
+    "year": 1971,
+    "genre": "Fantaisie",
+    "description": "Un garçon pauvre gagne un ticket pour visiter la chocolaterie magique et mystérieuse de Willy Wonka.",
+    "poster": "https://picsum.photos/seed/willywonka/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "The French Connection",
+    "year": 1971,
+    "genre": "Crime",
+    "description": "Un détective new-yorkais obstiné traque un réseau de trafic d'héroïne français.",
+    "poster": "https://picsum.photos/seed/frenchconnection/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Butch Cassidy and the Sundance Kid",
+    "year": 1969,
+    "genre": "Western",
+    "description": "Deux hors-la-loi charmants fuient un détachement implacable à travers l'Amérique et la Bolivie.",
+    "poster": "https://picsum.photos/seed/butchcassidy/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Easy Rider",
+    "year": 1969,
+    "genre": "Drame",
+    "description": "Deux motards traversent le sud des États-Unis et découvrent l'intolérance de l'Amérique profonde.",
+    "poster": "https://picsum.photos/seed/easyrider/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "Once Upon a Time in the West",
+    "year": 1968,
+    "genre": "Western",
+    "description": "Une veuve, un bandit et un harmoniciste mystérieux s'affrontent autour d'un terrain convoité.",
+    "poster": "https://picsum.photos/seed/onceuponwest/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "Night of the Living Dead",
+    "year": 1968,
+    "genre": "Horreur",
+    "description": "Un groupe de survivants se barricade dans une maison alors que les morts reviennent à la vie.",
+    "poster": "https://picsum.photos/seed/nightlivingdead/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "Bonnie and Clyde",
+    "year": 1967,
+    "genre": "Crime",
+    "description": "L'histoire vraie du couple de braqueurs les plus célèbres de la Grande Dépression.",
+    "poster": "https://picsum.photos/seed/bonnieclyde/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "The Graduate",
+    "year": 1967,
+    "genre": "Comédie",
+    "description": "Un jeune diplômé désorienté a une liaison avec une femme plus âgée puis tombe amoureux de sa fille.",
+    "poster": "https://picsum.photos/seed/thegraduate/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Cool Hand Luke",
+    "year": 1967,
+    "genre": "Drame",
+    "description": "Un prisonnier charismatique refuse de se soumettre à l'autorité dans un camp de travail du Sud.",
+    "poster": "https://picsum.photos/seed/coolhandluke/320/480",
+    "rating": 7.9
+  },
+  {
+    "title": "The Good, the Bad and the Ugly",
+    "year": 1966,
+    "genre": "Western",
+    "description": "Trois mercenaires cherchent un trésor de guerre enterré dans un cimetière pendant la guerre civile.",
+    "poster": "https://picsum.photos/seed/goodbadugly/320/480",
+    "rating": 8.8
+  },
+  {
+    "title": "Who's Afraid of Virginia Woolf?",
+    "year": 1966,
+    "genre": "Drame",
+    "description": "Un couple d'universitaires invite un jeune couple pour une nuit de jeux psychologiques cruels.",
+    "poster": "https://picsum.photos/seed/virginiawoolf/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "The Sound of Music",
+    "year": 1965,
+    "genre": "Comédie",
+    "description": "Une novice devenue gouvernante transforme une famille austère en Autriche grâce à la musique.",
+    "poster": "https://picsum.photos/seed/soundofmusic/320/480",
+    "rating": 6.8
+  },
+  {
+    "title": "Doctor Zhivago",
+    "year": 1965,
+    "genre": "Romance",
+    "description": "Un médecin-poète russe vit un amour impossible sur fond de révolution bolchévique.",
+    "poster": "https://picsum.photos/seed/drzhivago/320/480",
+    "rating": 7.1
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "year": 1962,
+    "genre": "Drame",
+    "description": "Un avocat du Sud défend un homme noir injustement accusé de viol dans les années 30.",
+    "poster": "https://picsum.photos/seed/tokillmockingbird/320/480",
+    "rating": 7.3
+  },
+  {
+    "title": "West Side Story",
+    "year": 1961,
+    "genre": "Romance",
+    "description": "Deux jeunes de gangs rivaux à New York vivent un amour impossible, version moderne de Roméo et Juliette.",
+    "poster": "https://picsum.photos/seed/westsidestory/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "The Apartment",
+    "year": 1960,
+    "genre": "Comédie",
+    "description": "Un employé grimpe les échelons en prêtant son appartement à ses supérieurs pour leurs aventures.",
+    "poster": "https://picsum.photos/seed/apartment2/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "La Strada",
+    "year": 1954,
+    "genre": "Drame",
+    "description": "Une jeune femme naïve est vendue à un saltimbanque brutal et l'accompagne sur les routes d'Italie.",
+    "poster": "https://picsum.photos/seed/lastrada/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "On the Waterfront",
+    "year": 1954,
+    "genre": "Drame",
+    "description": "Un ancien boxeur devenu docker défie le syndicat corrompu qui contrôle le port.",
+    "poster": "https://picsum.photos/seed/onthewaterfront/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Stalag 17",
+    "year": 1953,
+    "genre": "Guerre",
+    "description": "Dans un camp de prisonniers allemand, les détenus soupçonnent un mouchard parmi eux.",
+    "poster": "https://picsum.photos/seed/stalag17/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "High Noon",
+    "year": 1952,
+    "genre": "Western",
+    "description": "Un shérif nouvellement marié apprend qu'un criminel qu'il a fait emprisonner arrive pour se venger, et personne ne veut l'aider.",
+    "poster": "https://picsum.photos/seed/highnoon/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "A Streetcar Named Desire",
+    "year": 1951,
+    "genre": "Drame",
+    "description": "Une femme du Sud déchue vient vivre chez sa sœur et son beau-frère brutal à la Nouvelle-Orléans.",
+    "poster": "https://picsum.photos/seed/streetcar/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "All About Eve",
+    "year": 1950,
+    "genre": "Drame",
+    "description": "Une jeune admiratrice s'infiltre dans la vie d'une actrice de théâtre vieillissante pour prendre sa place.",
+    "poster": "https://picsum.photos/seed/allabouteve/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "The Third Man",
+    "year": 1949,
+    "genre": "Thriller",
+    "description": "Un auteur de romans policiers enquête sur la mort suspecte de son ami dans la Vienne d'après-guerre.",
+    "poster": "https://picsum.photos/seed/thirdman/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Rope",
+    "year": 1948,
+    "genre": "Thriller",
+    "description": "Deux étudiants commettent un meurtre parfait et cachent le corps pendant une réception chez eux.",
+    "poster": "https://picsum.photos/seed/rope/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "Double Indemnity",
+    "year": 1944,
+    "genre": "Crime",
+    "description": "Un agent d'assurance est séduit par une femme fatale pour assassiner son mari et toucher l'assurance.",
+    "poster": "https://picsum.photos/seed/doubleindemnity/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "The Maltese Falcon",
+    "year": 1941,
+    "genre": "Crime",
+    "description": "Un détective privé se retrouve mêlé à la recherche d'une statuette de faucon inestimable.",
+    "poster": "https://picsum.photos/seed/maltesefalcon/320/480",
+    "rating": 8.2
+  },
+  {
+    "title": "The Grapes of Wrath",
+    "year": 1940,
+    "genre": "Drame",
+    "description": "Une famille d'agriculteurs ruinés traverse le pays vers la Californie pendant la Grande Dépression.",
+    "poster": "https://picsum.photos/seed/grapesofwrath/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "Rebecca",
+    "year": 1940,
+    "genre": "Thriller",
+    "description": "Une jeune mariée est hantée par le souvenir de la première femme de son mari dans un manoir anglais.",
+    "poster": "https://picsum.photos/seed/rebecca/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Mr. Smith Goes to Washington",
+    "year": 1939,
+    "genre": "Drame",
+    "description": "Un sénateur idéaliste et naïf affronte la corruption politique à Washington.",
+    "poster": "https://picsum.photos/seed/mrsmith/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Stagecoach",
+    "year": 1939,
+    "genre": "Western",
+    "description": "Un groupe de voyageurs traverse le territoire apache dans une diligence.",
+    "poster": "https://picsum.photos/seed/stagecoach/320/480",
+    "rating": 7.0
+  },
+  {
+    "title": "Modern Times",
+    "year": 1936,
+    "genre": "Comédie",
+    "description": "Un ouvrier d'usine lutte contre la déshumanisation de l'ère industrielle avec humour.",
+    "poster": "https://picsum.photos/seed/moderntimes/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "City Lights",
+    "year": 1931,
+    "genre": "Romance",
+    "description": "Un vagabond tombe amoureux d'une fleuriste aveugle et fait tout pour payer son opération.",
+    "poster": "https://picsum.photos/seed/citylights/320/480",
+    "rating": 8.4
+  },
+  {
+    "title": "The General",
+    "year": 1926,
+    "genre": "Aventure",
+    "description": "Un conducteur de locomotive poursuit des espions de l'Union qui ont volé son train pendant la guerre civile.",
+    "poster": "https://picsum.photos/seed/thegeneral/320/480",
+    "rating": 7.4
+  },
+  {
+    "title": "Battleship Potemkin",
+    "year": 1925,
+    "genre": "Drame",
+    "description": "Les marins d'un cuirassé russe se mutinent contre leurs officiers en 1905.",
+    "poster": "https://picsum.photos/seed/potemkin/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "The Cabinet of Dr. Caligari",
+    "year": 1920,
+    "genre": "Horreur",
+    "description": "Un hypnotiseur utilise un somnambule pour commettre des meurtres dans une ville allemande.",
+    "poster": "https://picsum.photos/seed/caligari/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Tenet",
+    "year": 2020,
+    "genre": "Science-Fiction",
+    "description": "Un agent secret manipule le flux du temps pour empêcher la Troisième Guerre mondiale.",
+    "poster": "https://picsum.photos/seed/tenet/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "Soul",
+    "year": 2020,
+    "genre": "Animation",
+    "description": "Un pianiste de jazz meurt juste avant sa grande chance et doit retrouver son chemin vers la vie.",
+    "poster": "https://picsum.photos/seed/soul/320/480",
+    "rating": 7.5
+  },
+  {
+    "title": "Another Round",
+    "year": 2020,
+    "genre": "Comédie",
+    "description": "Quatre enseignants danois testent la théorie qu'un taux d'alcool constant améliore la vie.",
+    "poster": "https://picsum.photos/seed/anotherround/320/480",
+    "rating": 7.3
+  },
+  {
+    "title": "Promising Young Woman",
+    "year": 2020,
+    "genre": "Thriller",
+    "description": "Une femme brillante mène une double vie nocturne pour venger un traumatisme passé.",
+    "poster": "https://picsum.photos/seed/promisingyoungwoman/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "The Father",
+    "year": 2020,
+    "genre": "Drame",
+    "description": "Un homme âgé souffrant de démence perd progressivement le sens de la réalité.",
+    "poster": "https://picsum.photos/seed/thefather/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Judas and the Black Messiah",
+    "year": 2021,
+    "genre": "Drame",
+    "description": "Un informateur du FBI infiltre les Black Panthers de Chicago pour faire tomber leur leader.",
+    "poster": "https://picsum.photos/seed/judasblackmessiah/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "Pig",
+    "year": 2021,
+    "genre": "Drame",
+    "description": "Un ancien chef cuisinier vivant en ermite part à la recherche de sa truie truffière volée.",
+    "poster": "https://picsum.photos/seed/pig/320/480",
+    "rating": 6.8
+  },
+  {
+    "title": "Dune",
+    "year": 2021,
+    "genre": "Science-Fiction",
+    "description": "Paul Atréides, héritier d'une noble famille, doit se rendre sur Arrakis, la planète la plus dangereuse.",
+    "poster": "https://picsum.photos/seed/dune/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "The Green Knight",
+    "year": 2021,
+    "genre": "Fantaisie",
+    "description": "Le neveu du roi Arthur entreprend un voyage pour affronter le mystérieux Chevalier Vert.",
+    "poster": "https://picsum.photos/seed/greenknight/320/480",
+    "rating": 8.1
+  },
+  {
+    "title": "Memoria",
+    "year": 2021,
+    "genre": "Drame",
+    "description": "Une femme en Colombie est hantée par un bruit mystérieux qu'elle seule peut entendre.",
+    "poster": "https://picsum.photos/seed/memoria/320/480",
+    "rating": 7.6
+  },
+  {
+    "title": "The Worst Person in the World",
+    "year": 2021,
+    "genre": "Romance",
+    "description": "Une femme de trente ans à Oslo cherche sa voie entre deux relations et plusieurs vocations.",
+    "poster": "https://picsum.photos/seed/worstperson/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "Titane",
+    "year": 2021,
+    "genre": "Horreur",
+    "description": "Une femme avec une plaque de titane dans le crâne développe une relation étrange avec les voitures.",
+    "poster": "https://picsum.photos/seed/titane/320/480",
+    "rating": 7.8
+  },
+  {
+    "title": "Bo Burnham: Inside",
+    "year": 2021,
+    "genre": "Comédie",
+    "description": "Un comédien crée un spectacle seul chez lui pendant le confinement, entre humour et anxiété.",
+    "poster": "https://picsum.photos/seed/inside/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Spirited Away",
+    "year": 2001,
+    "genre": "Animation",
+    "description": "Chihiro, 10 ans, entre dans le monde des esprits et doit travailler pour libérer ses parents.",
+    "poster": "https://picsum.photos/seed/spiritedaway2/320/480",
+    "rating": 8.6
+  },
+  {
+    "title": "Monsters, Inc.",
+    "year": 2001,
+    "genre": "Animation",
+    "description": "Des monstres alimentent leur ville en énergie en effrayant des enfants, jusqu'à ce qu'une fillette s'infiltre.",
+    "poster": "https://picsum.photos/seed/monstersinc/320/480",
+    "rating": 7.3
+  },
+  {
+    "title": "Ran",
+    "year": 1985,
+    "genre": "Drame",
+    "description": "Un seigneur de guerre japonais divise son royaume entre ses trois fils, déclenchant trahison et guerre civile.",
+    "poster": "https://picsum.photos/seed/ran/320/480",
+    "rating": 6.9
+  },
+  {
+    "title": "The Lighthouse",
+    "year": 2019,
+    "genre": "Horreur",
+    "description": "Deux gardiens de phare sur une île isolée sombrent dans la folie et la violence.",
+    "poster": "https://picsum.photos/seed/lighthouse2/320/480",
+    "rating": 7.7
+  },
+  {
+    "title": "Zodiac",
+    "year": 2007,
+    "genre": "Thriller",
+    "description": "L'obsession d'un dessinateur et d'un journaliste pour capturer le tueur du Zodiaque en Californie.",
+    "poster": "https://picsum.photos/seed/zodiac3/320/480",
+    "rating": 7.3
+  },
+  {
+    "title": "The Conversation",
+    "year": 1974,
+    "genre": "Thriller",
+    "description": "Un expert en surveillance audio se retrouve piégé par sa propre paranoïa après une mission troublante.",
+    "poster": "https://picsum.photos/seed/theconversation/320/480",
+    "rating": 7.2
+  },
+  {
+    "title": "Network",
+    "year": 1976,
+    "genre": "Drame",
+    "description": "Un présentateur TV en crise devient une figure révolutionnaire exploitée par les dirigeants de la chaîne.",
+    "poster": "https://picsum.photos/seed/network2/320/480",
+    "rating": 8.0
+  },
+  {
+    "title": "Aguirre, the Wrath of God",
+    "year": 1972,
+    "genre": "Aventure",
+    "description": "Un conquistador fou mène une expédition suicidaire sur l'Amazone à la recherche de l'Eldorado.",
+    "poster": "https://picsum.photos/seed/aguirre/320/480",
+    "rating": 7.8
+  }
+]
