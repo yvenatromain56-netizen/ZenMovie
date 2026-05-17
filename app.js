@@ -254,9 +254,9 @@ async function applyFilter(genre) {
     activeGenreId = TMDB_GENRES[genre] || null;
     currentIndex = 0;
 
-    card.innerHTML = `<div class="flex items-center justify-center h-full text-gray-400 text-center p-6">
-        <p class="text-lg">Chargement...</p>
-    </div>`;
+    poster.src = "";
+    title.textContent = "Chargement...";
+    year.textContent = "";
 
     filteredMovies = await loadInitialMovies(activeGenreId);
     displayMovie();
@@ -269,13 +269,11 @@ function displayMovie() {
     checkAndLoadMore();
 
     if (currentIndex >= filteredMovies.length) {
-        card.innerHTML = `<div class="flex items-center justify-center h-full text-gray-400 text-center p-6">
-            <p class="text-lg">${
-                filteredMovies.length === 0
-                    ? "Aucun film trouvé. Vérifie ta clé TMDB."
-                    : "Plus de films à découvrir !<br>Change de genre ou recharge la page."
-            }</p>
-        </div>`;
+        poster.src = "";
+        title.textContent = filteredMovies.length === 0
+            ? "Aucun film trouvé. Vérifie ta clé TMDB."
+            : "Plus de films ! Change de genre.";
+        year.textContent = "";
         return;
     }
 
