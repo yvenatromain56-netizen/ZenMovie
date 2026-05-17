@@ -1,6 +1,7 @@
 const TMDB_IMG = "https://image.tmdb.org/t/p/w500";
 const TMDB_IMG_SMALL = "https://image.tmdb.org/t/p/w92";
 const MATCH_RATING_THRESHOLD = 8.0;
+const MIN_YEAR = 2000;
 
 let allMovies = [];
 let filteredMovies = [];
@@ -594,12 +595,61 @@ document.getElementById("couple-overlay").addEventListener("click", (e) => {
     }
 });
 
+// --- TMDB DISCOVER ---
+
+const TMDB_GENRE_MAP = {
+    28: "Action", 12: "Aventure", 16: "Animation", 35: "Comédie",
+    80: "Crime", 18: "Drame", 14: "Fantaisie", 27: "Horreur",
+    10749: "Romance", 878: "Science-Fiction", 53: "Thriller", 10752: "Guerre", 37: "Western"
+};
+
+async function fetchTmdbDiscover(page) {
+    if (!TMDB_API_KEY) return [];
+    const url = `https://api.themoviedb.org/3/discover/movie?api_key=${TMDB_API_KEY}&language=fr-FR&sort_by=popularity.desc&primary_release_date.gte=${MIN_YEAR}-01-01&primary_release_date.lte=2026-12-31&vote_count.gte=100&page=${page}`;
+    try {
+        const res = await fetch(url);
+        if (!res.ok) return [];
+        const data = await res.json();
+        return data.results.map((m) => ({
+            title: m.title,
+            year: parseInt(m.release_date?.substring(0, 4)) || 2020,
+            genre: TMDB_GENRE_MAP[m.genre_ids?.[0]] || "Drame",
+            description: m.overview || "",
+            poster: m.poster_path ? TMDB_IMG + m.poster_path : "https://picsum.photos/300/450",
+            rating: m.vote_average || 0,
+            tmdb_id: m.id,
+            tmdb_poster: m.poster_path,
+            tmdb_rating: m.vote_average,
+            enriched: true
+        }));
+    } catch (e) {
+        return [];
+    }
+}
+
+async function loadMovies() {
+    let movies = [];
+
+    if (TMDB_API_KEY) {
+        const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const results = await Promise.all(pages.map((p) => fetchTmdbDiscover(p)));
+        movies = results.flat();
+    }
+
+    if (movies.length === 0) {
+        const res = await fetch("movies.json");
+        const data = await res.json();
+        movies = data.filter((m) => m.year >= MIN_YEAR);
+    }
+
+    return movies;
+}
+
 // --- INIT ---
 
 updateBadge();
 
-fetch("movies.json")
-    .then((res) => res.json())
+loadMovies()
     .then((data) => {
         allMovies = data;
         applyFilter("Tous");
@@ -609,5 +659,5 @@ fetch("movies.json")
         card.innerHTML = `<div class="flex items-center justify-center h-full text-red-400 text-center p-6">
             <p>Erreur de chargement.<br>Lance un serveur local.</p>
         </div>`;
-        console.error("Erreur chargement movies.json:", err);
+        console.error("Erreur chargement:", err);
     });
