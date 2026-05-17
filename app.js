@@ -151,6 +151,30 @@ async function getProviders(tmdbId) {
     }
 }
 
+async function getTrailerUrl(tmdbId) {
+    if (!TMDB_API_KEY || !tmdbId) return null;
+    try {
+        const url = `https://api.themoviedb.org/3/movie/${tmdbId}/videos?api_key=${TMDB_API_KEY}&language=fr-FR`;
+        const res = await fetch(url);
+        if (!res.ok) return null;
+        const data = await res.json();
+        let trailer = data.results?.find((v) => v.type === "Trailer" && v.site === "YouTube");
+        if (!trailer) {
+            const urlEn = `https://api.themoviedb.org/3/movie/${tmdbId}/videos?api_key=${TMDB_API_KEY}&language=en-US`;
+            const resEn = await fetch(urlEn);
+            if (resEn.ok) {
+                const dataEn = await resEn.json();
+                trailer = dataEn.results?.find((v) => v.type === "Trailer" && v.site === "YouTube");
+                if (!trailer) trailer = dataEn.results?.find((v) => v.site === "YouTube");
+            }
+        }
+        if (trailer) return `https://www.youtube.com/embed/${trailer.key}`;
+        return null;
+    } catch (e) {
+        return null;
+    }
+}
+
 function getPosterUrl(movie) {
     if (movie.tmdb_poster) return TMDB_IMG + movie.tmdb_poster;
     return movie.poster;
@@ -446,20 +470,41 @@ document.getElementById("btn-toggle-matches").addEventListener("click", showMatc
 document.getElementById("btn-back-swipe").addEventListener("click", showSwipe);
 document.getElementById("btn-continue-swipe").addEventListener("click", hideMatchOverlay);
 
-document.getElementById("btn-details").addEventListener("click", () => {
+document.getElementById("btn-details").addEventListener("click", async () => {
     if (currentIndex >= filteredMovies.length) return;
     const movie = filteredMovies[currentIndex];
     detailsTitle.textContent = `${movie.title} (${movie.year})`;
     detailsSummary.textContent = movie.description;
+
+    const trailerContainer = document.getElementById("details-trailer");
+    const trailerIframe = document.getElementById("details-trailer-iframe");
+    const trailerLoading = document.getElementById("details-trailer-loading");
+
+    trailerContainer.classList.add("hidden");
+    trailerIframe.src = "";
+    trailerLoading.classList.remove("hidden");
     detailsOverlay.classList.remove("hidden");
+
+    if (!movie.tmdb_id) await enrichMovie(movie);
+
+    const trailerUrl = await getTrailerUrl(movie.tmdb_id);
+    trailerLoading.classList.add("hidden");
+
+    if (trailerUrl) {
+        trailerIframe.src = trailerUrl;
+        trailerContainer.classList.remove("hidden");
+    }
 });
 
-document.getElementById("btn-close-details").addEventListener("click", () => {
+function closeDetails() {
     detailsOverlay.classList.add("hidden");
-});
+    document.getElementById("details-trailer-iframe").src = "";
+}
+
+document.getElementById("btn-close-details").addEventListener("click", closeDetails);
 
 detailsOverlay.addEventListener("click", (e) => {
-    if (e.target === detailsOverlay) detailsOverlay.classList.add("hidden");
+    if (e.target === detailsOverlay) closeDetails();
 });
 
 document.getElementById("btn-close-match-details").addEventListener("click", () => {
