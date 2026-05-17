@@ -1,4 +1,4 @@
-let supabase = null;
+let sbClient = null;
 let currentUser = null;
 let authMode = "login";
 
@@ -10,7 +10,7 @@ function initSupabase() {
     if (!isSupabaseConfigured()) return false;
     if (!window.supabase || !window.supabase.createClient) return false;
     try {
-        supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+        sbClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
         return true;
     } catch (e) {
         console.error("Supabase init error:", e);
@@ -73,9 +73,9 @@ document.getElementById("btn-auth-submit").addEventListener("click", async () =>
     try {
         let result;
         if (authMode === "signup") {
-            result = await supabase.auth.signUp({ email, password });
+            result = await sbClient.auth.signUp({ email, password });
         } else {
-            result = await supabase.auth.signInWithPassword({ email, password });
+            result = await sbClient.auth.signInWithPassword({ email, password });
         }
 
         if (result.error) {
@@ -112,22 +112,22 @@ document.getElementById("auth-password").addEventListener("keydown", (e) => {
 document.getElementById("btn-auth-skip").addEventListener("click", () => {
     currentUser = null;
     hideAuthScreen();
-    if (typeof startApp === "function") startApp();
+    startApp();
 });
 
 document.getElementById("btn-logout").addEventListener("click", async () => {
-    if (supabase) await supabase.auth.signOut();
+    if (sbClient) await sbClient.auth.signOut();
     currentUser = null;
     document.getElementById("btn-logout").classList.add("hidden");
     location.reload();
 });
 
-// --- SYNC (non-bloquant) ---
+// --- SYNC ---
 
 async function syncWatchlistToCloud() {
-    if (!supabase || !currentUser) return;
+    if (!sbClient || !currentUser) return;
     try {
-        await supabase.from("watchlist").upsert(
+        await sbClient.from("watchlist").upsert(
             watchlist.map((movie) => ({
                 user_id: currentUser.id,
                 title: movie.title,
@@ -139,11 +139,11 @@ async function syncWatchlistToCloud() {
 }
 
 async function syncSwipedToCloud() {
-    if (!supabase || !currentUser) return;
+    if (!sbClient || !currentUser) return;
     try {
         const titles = [...swipedTitles];
         if (titles.length === 0) return;
-        await supabase.from("swiped").upsert(
+        await sbClient.from("swiped").upsert(
             titles.map((t) => ({ user_id: currentUser.id, title: t })),
             { onConflict: "user_id,title" }
         );
@@ -151,9 +151,9 @@ async function syncSwipedToCloud() {
 }
 
 async function loadWatchlistFromCloud() {
-    if (!supabase || !currentUser) return;
+    if (!sbClient || !currentUser) return;
     try {
-        const { data } = await supabase.from("watchlist").select("data").eq("user_id", currentUser.id);
+        const { data } = await sbClient.from("watchlist").select("data").eq("user_id", currentUser.id);
         if (data && data.length > 0) {
             watchlist = data.map((row) => row.data);
             localStorage.setItem("moviepicker-matches", JSON.stringify(watchlist));
@@ -162,9 +162,9 @@ async function loadWatchlistFromCloud() {
 }
 
 async function loadSwipedFromCloud() {
-    if (!supabase || !currentUser) return;
+    if (!sbClient || !currentUser) return;
     try {
-        const { data } = await supabase.from("swiped").select("title").eq("user_id", currentUser.id);
+        const { data } = await sbClient.from("swiped").select("title").eq("user_id", currentUser.id);
         if (data && data.length > 0) {
             swipedTitles = new Set(data.map((row) => row.title));
             localStorage.setItem("moviepicker-swiped", JSON.stringify([...swipedTitles]));
@@ -173,9 +173,9 @@ async function loadSwipedFromCloud() {
 }
 
 async function removeFromCloud(movieTitle) {
-    if (!supabase || !currentUser) return;
+    if (!sbClient || !currentUser) return;
     try {
-        await supabase.from("watchlist").delete().eq("user_id", currentUser.id).eq("title", movieTitle);
+        await sbClient.from("watchlist").delete().eq("user_id", currentUser.id).eq("title", movieTitle);
     } catch (e) {}
 }
 
@@ -189,18 +189,18 @@ async function onAuthSuccess() {
         await loadSwipedFromCloud();
     } catch (e) {}
     if (typeof updateBadge === "function") updateBadge();
-    if (typeof startApp === "function") startApp();
+    startApp();
 }
 
 async function initAuth() {
     if (!initSupabase()) {
         hideAuthScreen();
-        if (typeof startApp === "function") startApp();
+        startApp();
         return;
     }
 
     try {
-        const { data } = await supabase.auth.getSession();
+        const { data } = await sbClient.auth.getSession();
         if (data && data.session) {
             currentUser = data.session.user;
             await onAuthSuccess();
@@ -210,9 +210,8 @@ async function initAuth() {
     } catch (e) {
         console.error("Auth error:", e);
         hideAuthScreen();
-        if (typeof startApp === "function") startApp();
+        startApp();
     }
 }
 
-// Lancer
 initAuth();
