@@ -146,7 +146,7 @@ function hideMatchOverlay() {
 
 async function fetchDiscoverPage(page, genreId) {
     if (!TMDB_API_KEY) return { movies: [], totalPages: 0 };
-    let url = `https://api.themoviedb.org/3/discover/movie?api_key=${TMDB_API_KEY}&language=fr-FR&sort_by=popularity.desc&primary_release_date.gte=${MIN_YEAR}-01-01&primary_release_date.lte=2026-12-31&vote_average.gte=7.0&vote_count.gte=1000&page=${page}`;
+    let url = `https://api.themoviedb.org/3/discover/movie?api_key=${TMDB_API_KEY}&language=fr-FR&sort_by=popularity.desc&primary_release_date.gte=${MIN_YEAR}-01-01&primary_release_date.lte=2026-12-31&vote_average.gte=7&vote_count.gte=1000&page=${page}`;
     if (genreId) url += `&with_genres=${genreId}`;
 
     try {
