@@ -96,6 +96,33 @@ body {
     box-shadow: 0 0 12px rgba(124, 58, 237, 0.4);
 }
 
+/* === MATCH GENRE FILTER PILLS === */
+
+.match-genre-btn {
+    padding: 0.35rem 0.85rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    white-space: nowrap;
+    border: 1.5px solid #4b5563;
+    color: #9ca3af;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.match-genre-btn:hover {
+    border-color: #ec4899;
+    color: #f9a8d4;
+}
+
+.match-genre-btn.active {
+    background: #ec4899;
+    border-color: #ec4899;
+    color: #ffffff;
+    box-shadow: 0 0 12px rgba(236, 72, 153, 0.4);
+}
+
 .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;

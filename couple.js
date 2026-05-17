@@ -153,6 +153,13 @@ function showCoupleMatch(movieTitle) {
         document.getElementById("couple-match-poster").src = getPosterUrl(movie);
     }
 
+    // Marquer le film comme match couple dans la watchlist
+    const inWatchlist = watchlist.find((m) => m.title === movieTitle);
+    if (inWatchlist) {
+        inWatchlist.matchType = "couple";
+        saveWatchlist();
+    }
+
     overlay.classList.remove("hidden");
 
     if (navigator.vibrate) navigator.vibrate([50, 100, 50, 100, 200]);

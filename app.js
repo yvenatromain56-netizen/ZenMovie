@@ -300,14 +300,17 @@ function swipe(direction) {
     saveSwiped(movie.title);
 
     if (direction === "right") {
+        const rating = movie.tmdb_rating || movie.rating || 0;
+        const isMatch = rating >= MATCH_RATING_THRESHOLD;
+
+        movie.matchType = isMatch ? "match" : "liked";
         watchlist.push(movie);
         saveWatchlist();
         updateBadge();
 
         if (currentRoom) sendLikeToRoom(movie);
 
-        const rating = movie.tmdb_rating || movie.rating || 0;
-        if (rating >= MATCH_RATING_THRESHOLD) {
+        if (isMatch) {
             showMatchOverlay(movie);
         } else {
             showHeartAnimation();
@@ -395,27 +398,69 @@ async function showMatchDetails(movie) {
     }
 }
 
+let matchesGenreFilter = "Tous";
+
+function getMatchBadge(movie) {
+    if (movie.matchType === "couple") {
+        return `<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-pink-500/20 text-pink-400 border border-pink-500/30">COUPLE</span>`;
+    }
+    if (movie.matchType === "match") {
+        return `<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-yellow-500/20 text-yellow-400 border border-yellow-500/30">MATCH</span>`;
+    }
+    return `<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/30">LIKÉ</span>`;
+}
+
+function getMatchBorder(movie) {
+    if (movie.matchType === "couple") return "border-l-4 border-l-pink-500";
+    if (movie.matchType === "match") return "border-l-4 border-l-yellow-500";
+    return "border-l-4 border-l-green-500/50";
+}
+
+function updateMatchStats() {
+    const matches = watchlist.filter((m) => m.matchType === "match").length;
+    const couple = watchlist.filter((m) => m.matchType === "couple").length;
+    const liked = watchlist.filter((m) => !m.matchType || m.matchType === "liked").length;
+    document.getElementById("stat-matches").textContent = matches;
+    document.getElementById("stat-couple").textContent = couple;
+    document.getElementById("stat-liked").textContent = liked;
+}
+
+function getFilteredWatchlist() {
+    if (matchesGenreFilter === "Tous") return watchlist;
+    return watchlist.filter((m) => m.genre === matchesGenreFilter);
+}
+
 function renderMatches() {
     matchesList.innerHTML = "";
+    updateMatchStats();
 
-    if (watchlist.length === 0) {
+    const filtered = getFilteredWatchlist();
+
+    if (filtered.length === 0) {
         matchesEmpty.classList.remove("hidden");
+        matchesEmpty.textContent = watchlist.length === 0
+            ? "Aucun film pour l'instant. Swipe des films vers la droite !"
+            : "Aucun film dans cette catégorie.";
         return;
     }
 
     matchesEmpty.classList.add("hidden");
 
-    watchlist.forEach((movie, i) => {
+    filtered.forEach((movie) => {
+        const globalIndex = watchlist.indexOf(movie);
         const rating = movie.tmdb_rating || movie.rating || 0;
         const li = document.createElement("li");
-        li.className = "match-item flex items-center gap-3 bg-gray-800 rounded-xl p-3 cursor-pointer hover:bg-gray-700 transition-colors";
+        li.className = `match-item flex items-center gap-3 bg-gray-800 rounded-xl p-3 cursor-pointer hover:bg-gray-700 transition-colors ${getMatchBorder(movie)}`;
         li.innerHTML = `
             <img src="${getPosterSmall(movie)}" alt="${movie.title}" class="w-12 h-16 object-cover rounded-lg flex-shrink-0">
             <div class="flex-1 min-w-0">
-                <p class="text-white font-medium text-sm truncate">${movie.title}</p>
-                <p class="text-gray-400 text-xs">${movie.year} — ${movie.genre}${rating ? ` — ⭐ ${rating.toFixed(1)}` : ""}</p>
+                <div class="flex items-center gap-2 mb-0.5">
+                    <p class="text-white font-medium text-sm truncate">${movie.title}</p>
+                    ${getMatchBadge(movie)}
+                </div>
+                <p class="text-gray-400 text-xs">${movie.year} — ${movie.genre}${rating ? ` — ${rating.toFixed(1)}/10` : ""}</p>
             </div>
-            <button class="btn-remove flex-shrink-0 w-8 h-8 rounded-full bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white flex items-center justify-center transition-colors" data-index="${i}">
+            <button class="btn-remove flex-shrink-0 w-8 h-8 rounded-full bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white flex items-center justify-center transition-colors" data-index="${globalIndex}">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
             </button>
         `;
@@ -580,8 +625,9 @@ genreFilters.addEventListener("click", (e) => {
 // --- RANDOM PICK ---
 
 function pickRandomMovie() {
-    if (watchlist.length === 0) return;
-    const movie = watchlist[Math.floor(Math.random() * watchlist.length)];
+    const pool = getFilteredWatchlist();
+    if (pool.length === 0) return;
+    const movie = pool[Math.floor(Math.random() * pool.length)];
     const overlay = document.getElementById("random-pick-overlay");
     const posterEl = document.getElementById("random-pick-poster");
 
@@ -596,6 +642,17 @@ function pickRandomMovie() {
     overlay.classList.remove("hidden");
     if (navigator.vibrate) navigator.vibrate([20, 40, 20]);
 }
+
+// --- MATCHES GENRE FILTER ---
+
+document.getElementById("matches-genre-filters").addEventListener("click", (e) => {
+    const btn = e.target.closest(".match-genre-btn");
+    if (!btn) return;
+    document.querySelectorAll(".match-genre-btn").forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    matchesGenreFilter = btn.dataset.genre;
+    renderMatches();
+});
 
 document.getElementById("btn-random-pick").addEventListener("click", pickRandomMovie);
 document.getElementById("btn-random-pick-again").addEventListener("click", pickRandomMovie);
