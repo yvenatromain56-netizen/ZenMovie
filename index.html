@@ -22,7 +22,7 @@
     <!-- PeerJS -->
     <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
     <!-- Supabase -->
-    <script src="https://unpkg.com/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-900 min-h-screen flex flex-col items-center">
@@ -315,9 +315,9 @@
     </div>
 
     <script src="config.js"></script>
-    <script src="auth.js"></script>
     <script src="couple.js"></script>
     <script src="app.js"></script>
+    <script src="auth.js"></script>
     <script>
         if ("serviceWorker" in navigator) {
             navigator.serviceWorker.register("./sw.js").then(() => {

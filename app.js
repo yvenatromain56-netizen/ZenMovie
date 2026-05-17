@@ -708,7 +708,11 @@ document.getElementById("couple-overlay").addEventListener("click", (e) => {
 
 // --- INIT ---
 
+let appStarted = false;
+
 function startApp() {
+    if (appStarted) return;
+    appStarted = true;
     updateBadge();
     applyFilter("Tous").then(() => initSwipe());
 }

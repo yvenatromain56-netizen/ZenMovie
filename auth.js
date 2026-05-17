@@ -8,6 +8,7 @@ function isSupabaseConfigured() {
 
 function initSupabase() {
     if (!isSupabaseConfigured()) return false;
+    if (!window.supabase || !window.supabase.createClient) return false;
     try {
         supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
         return true;
@@ -60,9 +61,8 @@ document.getElementById("btn-auth-submit").addEventListener("click", async () =>
         showAuthError("Remplis tous les champs.");
         return;
     }
-
     if (password.length < 6) {
-        showAuthError("Le mot de passe doit faire 6 caractères minimum.");
+        showAuthError("6 caractères minimum.");
         return;
     }
 
@@ -86,14 +86,14 @@ document.getElementById("btn-auth-submit").addEventListener("click", async () =>
         }
 
         if (authMode === "signup" && result.data?.user && !result.data.session) {
-            showAuthError("Compte créé ! Vérifie ton email pour confirmer, puis connecte-toi.");
+            showAuthError("Compte créé ! Vérifie ton email puis connecte-toi.");
             btn.disabled = false;
             btn.textContent = "Créer un compte";
             return;
         }
 
         currentUser = result.data.user;
-        onAuthSuccess();
+        await onAuthSuccess();
     } catch (e) {
         showAuthError("Erreur de connexion.");
         btn.disabled = false;
@@ -112,17 +112,17 @@ document.getElementById("auth-password").addEventListener("keydown", (e) => {
 document.getElementById("btn-auth-skip").addEventListener("click", () => {
     currentUser = null;
     hideAuthScreen();
-    startApp();
+    if (typeof startApp === "function") startApp();
 });
 
 document.getElementById("btn-logout").addEventListener("click", async () => {
     if (supabase) await supabase.auth.signOut();
     currentUser = null;
     document.getElementById("btn-logout").classList.add("hidden");
-    showAuthScreen();
+    location.reload();
 });
 
-// --- SYNC ---
+// --- SYNC (non-bloquant) ---
 
 async function syncWatchlistToCloud() {
     if (!supabase || !currentUser) return;
@@ -135,70 +135,48 @@ async function syncWatchlistToCloud() {
             })),
             { onConflict: "user_id,title" }
         );
-    } catch (e) {
-        console.error("Sync to cloud error:", e);
-    }
+    } catch (e) {}
 }
 
 async function syncSwipedToCloud() {
     if (!supabase || !currentUser) return;
     try {
         const titles = [...swipedTitles];
+        if (titles.length === 0) return;
         await supabase.from("swiped").upsert(
-            titles.map((t) => ({
-                user_id: currentUser.id,
-                title: t
-            })),
+            titles.map((t) => ({ user_id: currentUser.id, title: t })),
             { onConflict: "user_id,title" }
         );
-    } catch (e) {
-        console.error("Sync swiped error:", e);
-    }
+    } catch (e) {}
 }
 
 async function loadWatchlistFromCloud() {
     if (!supabase || !currentUser) return;
     try {
-        const { data } = await supabase
-            .from("watchlist")
-            .select("data")
-            .eq("user_id", currentUser.id);
+        const { data } = await supabase.from("watchlist").select("data").eq("user_id", currentUser.id);
         if (data && data.length > 0) {
             watchlist = data.map((row) => row.data);
-            saveWatchlist();
+            localStorage.setItem("moviepicker-matches", JSON.stringify(watchlist));
         }
-    } catch (e) {
-        console.error("Load watchlist error:", e);
-    }
+    } catch (e) {}
 }
 
 async function loadSwipedFromCloud() {
     if (!supabase || !currentUser) return;
     try {
-        const { data } = await supabase
-            .from("swiped")
-            .select("title")
-            .eq("user_id", currentUser.id);
+        const { data } = await supabase.from("swiped").select("title").eq("user_id", currentUser.id);
         if (data && data.length > 0) {
             swipedTitles = new Set(data.map((row) => row.title));
             localStorage.setItem("moviepicker-swiped", JSON.stringify([...swipedTitles]));
         }
-    } catch (e) {
-        console.error("Load swiped error:", e);
-    }
+    } catch (e) {}
 }
 
 async function removeFromCloud(movieTitle) {
     if (!supabase || !currentUser) return;
     try {
-        await supabase
-            .from("watchlist")
-            .delete()
-            .eq("user_id", currentUser.id)
-            .eq("title", movieTitle);
-    } catch (e) {
-        console.error("Remove from cloud error:", e);
-    }
+        await supabase.from("watchlist").delete().eq("user_id", currentUser.id).eq("title", movieTitle);
+    } catch (e) {}
 }
 
 // --- AUTH FLOW ---
@@ -206,26 +184,35 @@ async function removeFromCloud(movieTitle) {
 async function onAuthSuccess() {
     hideAuthScreen();
     document.getElementById("btn-logout").classList.remove("hidden");
-    await loadWatchlistFromCloud();
-    await loadSwipedFromCloud();
-    updateBadge();
-    startApp();
+    try {
+        await loadWatchlistFromCloud();
+        await loadSwipedFromCloud();
+    } catch (e) {}
+    if (typeof updateBadge === "function") updateBadge();
+    if (typeof startApp === "function") startApp();
 }
 
-async function checkExistingSession() {
+async function initAuth() {
     if (!initSupabase()) {
         hideAuthScreen();
-        startApp();
+        if (typeof startApp === "function") startApp();
         return;
     }
 
-    const { data: { session } } = await supabase.auth.getSession();
-    if (session) {
-        currentUser = session.user;
-        onAuthSuccess();
-    } else {
-        showAuthScreen();
+    try {
+        const { data } = await supabase.auth.getSession();
+        if (data && data.session) {
+            currentUser = data.session.user;
+            await onAuthSuccess();
+        } else {
+            showAuthScreen();
+        }
+    } catch (e) {
+        console.error("Auth error:", e);
+        hideAuthScreen();
+        if (typeof startApp === "function") startApp();
     }
 }
 
-checkExistingSession();
+// Lancer
+initAuth();
