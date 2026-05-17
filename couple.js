@@ -50,7 +50,7 @@ function showFirebaseSetup() {
         "Colle le databaseURL ici :"
     );
 
-    if (dbUrl && dbUrl.includes("firebaseio.com")) {
+    if (dbUrl && (dbUrl.includes("firebaseio.com") || dbUrl.includes("firebasedatabase.app"))) {
         const projectId = dbUrl.split("//")[1]?.split("-default")[0] || "zenmovie";
         localStorage.setItem("zenmovie-firebase-dburl", dbUrl.trim());
         localStorage.setItem("zenmovie-firebase-domain", projectId + ".firebaseapp.com");
