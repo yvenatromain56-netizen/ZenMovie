@@ -2,13 +2,41 @@ const TMDB_IMG = "https://image.tmdb.org/t/p/w500";
 const TMDB_IMG_SMALL = "https://image.tmdb.org/t/p/w92";
 const MATCH_RATING_THRESHOLD = 8.0;
 const MIN_YEAR = 2000;
+const PRELOAD_THRESHOLD = 5;
 
 let allMovies = [];
 let filteredMovies = [];
 let currentIndex = 0;
 let activeGenre = "Tous";
+let activeGenreId = null;
+let currentPage = 0;
+let isLoadingMore = false;
+let totalPages = 500;
 let watchlist = JSON.parse(localStorage.getItem("moviepicker-matches")) || [];
 let swipedTitles = new Set(JSON.parse(localStorage.getItem("moviepicker-swiped")) || []);
+
+const TMDB_GENRES = {
+    "Tous": null,
+    "Action": 28,
+    "Aventure": 12,
+    "Animation": 16,
+    "Comédie": 35,
+    "Crime": 80,
+    "Drame": 18,
+    "Fantaisie": 14,
+    "Horreur": 27,
+    "Romance": 10749,
+    "Science-Fiction": 878,
+    "Thriller": 53,
+    "Guerre": 10752,
+    "Western": 37
+};
+
+const TMDB_GENRE_MAP = {
+    28: "Action", 12: "Aventure", 16: "Animation", 35: "Comédie",
+    80: "Crime", 18: "Drame", 14: "Fantaisie", 27: "Horreur",
+    10749: "Romance", 878: "Science-Fiction", 53: "Thriller", 10752: "Guerre", 37: "Western"
+};
 
 const card = document.getElementById("movie-card");
 const poster = document.getElementById("movie-poster");
@@ -33,8 +61,8 @@ function saveWatchlist() {
     localStorage.setItem("moviepicker-matches", JSON.stringify(watchlist));
 }
 
-function saveSwiped(title) {
-    swipedTitles.add(title);
+function saveSwiped(movieTitle) {
+    swipedTitles.add(movieTitle);
     localStorage.setItem("moviepicker-swiped", JSON.stringify([...swipedTitles]));
 }
 
@@ -61,9 +89,7 @@ function updateBadge() {
 }
 
 function hapticFeedback() {
-    if (navigator.vibrate) {
-        navigator.vibrate([30, 50, 80]);
-    }
+    if (navigator.vibrate) navigator.vibrate([30, 50, 80]);
 }
 
 function showHeartAnimation() {
@@ -76,14 +102,11 @@ function showHeartAnimation() {
 
 function fireConfetti() {
     if (typeof confetti === "undefined") return;
-
     const count = 200;
     const defaults = { origin: { y: 0.6 }, zIndex: 200 };
-
     function fire(particleRatio, opts) {
         confetti({ ...defaults, particleCount: Math.floor(count * particleRatio), ...opts });
     }
-
     fire(0.25, { spread: 26, startVelocity: 55 });
     fire(0.2, { spread: 60 });
     fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8 });
@@ -104,9 +127,7 @@ function showMatchOverlay(movie) {
     overlayRating.innerHTML = "⭐".repeat(stars) + ` ${rating}/10`;
 
     matchOverlay.classList.remove("hidden", "hiding");
-
     hapticFeedback();
-
     setTimeout(() => fireConfetti(), 300);
     setTimeout(() => fireConfetti(), 800);
 }
@@ -119,23 +140,63 @@ function hideMatchOverlay() {
     }, 300);
 }
 
-// --- TMDB ---
+// --- TMDB API ---
 
-async function searchTMDB(movieTitle, movieYear) {
-    if (!TMDB_API_KEY) return null;
+async function fetchDiscoverPage(page, genreId) {
+    if (!TMDB_API_KEY) return { movies: [], totalPages: 0 };
+    let url = `https://api.themoviedb.org/3/discover/movie?api_key=${TMDB_API_KEY}&language=fr-FR&sort_by=popularity.desc&primary_release_date.gte=${MIN_YEAR}-01-01&primary_release_date.lte=2026-12-31&vote_count.gte=50&page=${page}`;
+    if (genreId) url += `&with_genres=${genreId}`;
+
     try {
-        const url = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movieTitle)}&year=${movieYear}&language=fr-FR`;
         const res = await fetch(url);
-        if (!res.ok) return null;
+        if (!res.ok) return { movies: [], totalPages: 0 };
         const data = await res.json();
-        if (data.results && data.results.length > 0) return data.results[0];
-        const url2 = `https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(movieTitle)}&language=fr-FR`;
-        const res2 = await fetch(url2);
-        if (!res2.ok) return null;
-        const data2 = await res2.json();
-        return data2.results?.[0] || null;
+        const movies = data.results
+            .filter((m) => m.poster_path)
+            .map((m) => ({
+                title: m.title,
+                year: parseInt(m.release_date?.substring(0, 4)) || 2020,
+                genre: TMDB_GENRE_MAP[m.genre_ids?.[0]] || "Drame",
+                description: m.overview || "",
+                poster: TMDB_IMG + m.poster_path,
+                rating: m.vote_average || 0,
+                tmdb_id: m.id,
+                tmdb_poster: m.poster_path,
+                tmdb_rating: m.vote_average,
+                enriched: true
+            }));
+        return { movies, totalPages: Math.min(data.total_pages, 500) };
     } catch (e) {
-        return null;
+        return { movies: [], totalPages: 0 };
+    }
+}
+
+async function loadInitialMovies(genreId) {
+    currentPage = 1;
+    const { movies, totalPages: tp } = await fetchDiscoverPage(1, genreId);
+    totalPages = tp;
+
+    const filtered = movies.filter((m) => !swipedTitles.has(m.title));
+    return filtered;
+}
+
+async function loadMoreMovies() {
+    if (isLoadingMore || currentPage >= totalPages) return;
+    isLoadingMore = true;
+    currentPage++;
+
+    const { movies } = await fetchDiscoverPage(currentPage, activeGenreId);
+    const newMovies = movies.filter((m) => !swipedTitles.has(m.title));
+
+    filteredMovies = [...filteredMovies, ...newMovies];
+    updateRemaining();
+    isLoadingMore = false;
+}
+
+function checkAndLoadMore() {
+    const remaining = filteredMovies.length - currentIndex;
+    if (remaining <= PRELOAD_THRESHOLD && !isLoadingMore && currentPage < totalPages) {
+        loadMoreMovies();
     }
 }
 
@@ -186,45 +247,32 @@ function getPosterSmall(movie) {
     return movie.poster;
 }
 
-async function enrichMovie(movie) {
-    if (movie.enriched) return movie;
-    movie.enriched = true;
-    const result = await searchTMDB(movie.title, movie.year);
-    if (result) {
-        movie.tmdb_id = result.id;
-        if (result.poster_path) movie.tmdb_poster = result.poster_path;
-        if (result.overview) movie.description = result.overview;
-        if (result.vote_average) movie.tmdb_rating = result.vote_average;
-    }
-    return movie;
-}
-
 // --- FILTER ---
 
-function applyFilter(genre) {
+async function applyFilter(genre) {
     activeGenre = genre;
+    activeGenreId = TMDB_GENRES[genre] || null;
     currentIndex = 0;
 
-    let pool = allMovies.filter((m) => !swipedTitles.has(m.title));
+    card.innerHTML = `<div class="flex items-center justify-center h-full text-gray-400 text-center p-6">
+        <p class="text-lg">Chargement...</p>
+    </div>`;
 
-    if (genre !== "Tous") {
-        pool = pool.filter((m) => m.genre === genre);
-    }
-
-    filteredMovies = shuffle(pool);
+    filteredMovies = await loadInitialMovies(activeGenreId);
     displayMovie();
 }
 
 // --- DISPLAY ---
 
-async function displayMovie() {
+function displayMovie() {
     updateRemaining();
+    checkAndLoadMore();
 
     if (currentIndex >= filteredMovies.length) {
         card.innerHTML = `<div class="flex items-center justify-center h-full text-gray-400 text-center p-6">
             <p class="text-lg">${
                 filteredMovies.length === 0
-                    ? "Aucun film dans ce genre."
+                    ? "Aucun film trouvé. Vérifie ta clé TMDB."
                     : "Plus de films à découvrir !<br>Change de genre ou recharge la page."
             }</p>
         </div>`;
@@ -232,7 +280,7 @@ async function displayMovie() {
     }
 
     const movie = filteredMovies[currentIndex];
-    poster.src = movie.poster;
+    poster.src = getPosterUrl(movie);
     poster.alt = movie.title;
     title.textContent = movie.title;
     year.textContent = `${movie.year} — ${movie.genre}`;
@@ -240,16 +288,8 @@ async function displayMovie() {
     card.style.opacity = "";
     card.classList.remove("swipe-left", "swipe-right", "swiping");
 
-    // Card enter animation
     card.classList.add("card-enter");
     setTimeout(() => card.classList.remove("card-enter"), 400);
-
-    await enrichMovie(movie);
-    if (movie.tmdb_poster) poster.src = getPosterUrl(movie);
-
-    if (currentIndex + 1 < filteredMovies.length) {
-        enrichMovie(filteredMovies[currentIndex + 1]);
-    }
 }
 
 function swipe(direction) {
@@ -263,14 +303,10 @@ function swipe(direction) {
         saveWatchlist();
         updateBadge();
 
-        // Send to couple room if active
         if (currentRoom) sendLikeToRoom(movie);
 
-        // Use local rating OR tmdb_rating
         const rating = movie.tmdb_rating || movie.rating || 0;
-        const isMatch = rating >= MATCH_RATING_THRESHOLD;
-
-        if (isMatch) {
+        if (rating >= MATCH_RATING_THRESHOLD) {
             showMatchOverlay(movie);
         } else {
             showHeartAnimation();
@@ -316,12 +352,6 @@ async function showMatchDetails(movie) {
     providersEmpty.classList.add("hidden");
     providersLoading.classList.remove("hidden");
     matchDetailsOverlay.classList.remove("hidden");
-
-    if (!movie.tmdb_id) {
-        await enrichMovie(movie);
-        document.getElementById("match-detail-poster").src = getPosterUrl(movie);
-        document.getElementById("match-detail-description").textContent = movie.description;
-    }
 
     if (movie.tmdb_id) {
         const providers = await getProviders(movie.tmdb_id);
@@ -381,7 +411,7 @@ function renderMatches() {
             <img src="${getPosterSmall(movie)}" alt="${movie.title}" class="w-12 h-16 object-cover rounded-lg flex-shrink-0">
             <div class="flex-1 min-w-0">
                 <p class="text-white font-medium text-sm truncate">${movie.title}</p>
-                <p class="text-gray-400 text-xs">${movie.year} — ${movie.genre}${rating ? ` — ⭐ ${rating}` : ""}</p>
+                <p class="text-gray-400 text-xs">${movie.year} — ${movie.genre}${rating ? ` — ⭐ ${rating.toFixed(1)}` : ""}</p>
             </div>
             <button class="btn-remove flex-shrink-0 w-8 h-8 rounded-full bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white flex items-center justify-center transition-colors" data-index="${i}">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
@@ -486,8 +516,6 @@ document.getElementById("btn-details").addEventListener("click", async () => {
     trailerLoading.classList.remove("hidden");
     detailsOverlay.classList.remove("hidden");
 
-    if (!movie.tmdb_id) await enrichMovie(movie);
-
     const trailerUrl = await getTrailerUrl(movie.tmdb_id);
     trailerLoading.classList.add("hidden");
 
@@ -536,13 +564,11 @@ function pickRandomMovie() {
     document.getElementById("random-pick-meta").textContent = `${movie.year} — ${movie.genre}`;
     posterEl.src = getPosterUrl(movie);
 
-    // Reset animation
     posterEl.classList.remove("random-pick-reveal");
     void posterEl.offsetWidth;
     posterEl.classList.add("random-pick-reveal");
 
     overlay.classList.remove("hidden");
-
     if (navigator.vibrate) navigator.vibrate([20, 40, 20]);
 }
 
@@ -595,69 +621,7 @@ document.getElementById("couple-overlay").addEventListener("click", (e) => {
     }
 });
 
-// --- TMDB DISCOVER ---
-
-const TMDB_GENRE_MAP = {
-    28: "Action", 12: "Aventure", 16: "Animation", 35: "Comédie",
-    80: "Crime", 18: "Drame", 14: "Fantaisie", 27: "Horreur",
-    10749: "Romance", 878: "Science-Fiction", 53: "Thriller", 10752: "Guerre", 37: "Western"
-};
-
-async function fetchTmdbDiscover(page) {
-    if (!TMDB_API_KEY) return [];
-    const url = `https://api.themoviedb.org/3/discover/movie?api_key=${TMDB_API_KEY}&language=fr-FR&sort_by=popularity.desc&primary_release_date.gte=${MIN_YEAR}-01-01&primary_release_date.lte=2026-12-31&vote_count.gte=100&page=${page}`;
-    try {
-        const res = await fetch(url);
-        if (!res.ok) return [];
-        const data = await res.json();
-        return data.results.map((m) => ({
-            title: m.title,
-            year: parseInt(m.release_date?.substring(0, 4)) || 2020,
-            genre: TMDB_GENRE_MAP[m.genre_ids?.[0]] || "Drame",
-            description: m.overview || "",
-            poster: m.poster_path ? TMDB_IMG + m.poster_path : "https://picsum.photos/300/450",
-            rating: m.vote_average || 0,
-            tmdb_id: m.id,
-            tmdb_poster: m.poster_path,
-            tmdb_rating: m.vote_average,
-            enriched: true
-        }));
-    } catch (e) {
-        return [];
-    }
-}
-
-async function loadMovies() {
-    let movies = [];
-
-    if (TMDB_API_KEY) {
-        const pages = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-        const results = await Promise.all(pages.map((p) => fetchTmdbDiscover(p)));
-        movies = results.flat();
-    }
-
-    if (movies.length === 0) {
-        const res = await fetch("movies.json");
-        const data = await res.json();
-        movies = data.filter((m) => m.year >= MIN_YEAR);
-    }
-
-    return movies;
-}
-
 // --- INIT ---
 
 updateBadge();
-
-loadMovies()
-    .then((data) => {
-        allMovies = data;
-        applyFilter("Tous");
-        initSwipe();
-    })
-    .catch((err) => {
-        card.innerHTML = `<div class="flex items-center justify-center h-full text-red-400 text-center p-6">
-            <p>Erreur de chargement.<br>Lance un serveur local.</p>
-        </div>`;
-        console.error("Erreur chargement:", err);
-    });
+applyFilter("Tous").then(() => initSwipe());
