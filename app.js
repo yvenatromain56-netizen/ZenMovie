@@ -61,11 +61,13 @@ const genreFilters = document.getElementById("genre-filters");
 
 function saveWatchlist() {
     localStorage.setItem("moviepicker-matches", JSON.stringify(watchlist));
+    if (typeof syncWatchlistToCloud === "function") syncWatchlistToCloud();
 }
 
 function saveSwiped(movieTitle) {
     swipedTitles.add(movieTitle);
     localStorage.setItem("moviepicker-swiped", JSON.stringify([...swipedTitles]));
+    if (typeof syncSwipedToCloud === "function") syncSwipedToCloud();
 }
 
 function shuffle(array) {
@@ -335,10 +337,11 @@ function removeMatch(index) {
     if (item) {
         item.classList.add("removing");
         setTimeout(() => {
-            watchlist.splice(index, 1);
+            const removed = watchlist.splice(index, 1)[0];
             saveWatchlist();
             updateBadge();
             renderMatches();
+            if (removed && typeof removeFromCloud === "function") removeFromCloud(removed.title);
         }, 300);
     }
 }
@@ -705,5 +708,7 @@ document.getElementById("couple-overlay").addEventListener("click", (e) => {
 
 // --- INIT ---
 
-updateBadge();
-applyFilter("Tous").then(() => initSwipe());
+function startApp() {
+    updateBadge();
+    applyFilter("Tous").then(() => initSwipe());
+}
