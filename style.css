@@ -21,11 +21,15 @@ body {
     transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
                 opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1);
     will-change: transform, opacity;
+    touch-action: pan-y;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 #movie-card.swiping {
     transition: none !important;
     animation: none !important;
+    touch-action: none;
 }
 
 #movie-card.swipe-right {

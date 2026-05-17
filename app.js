@@ -3,6 +3,7 @@ const TMDB_IMG_SMALL = "https://image.tmdb.org/t/p/w92";
 const MATCH_RATING_THRESHOLD = 8.0;
 const MIN_YEAR = 2000;
 const PRELOAD_THRESHOLD = 5;
+const SWIPE_COOLDOWN = 300;
 
 let allMovies = [];
 let filteredMovies = [];
@@ -11,6 +12,7 @@ let activeGenre = "Tous";
 let activeGenreId = null;
 let currentPage = 0;
 let isLoadingMore = false;
+let isSwiping = false;
 let totalPages = 500;
 let watchlist = JSON.parse(localStorage.getItem("moviepicker-matches")) || [];
 let swipedTitles = new Set(JSON.parse(localStorage.getItem("moviepicker-swiped")) || []);
@@ -144,7 +146,7 @@ function hideMatchOverlay() {
 
 async function fetchDiscoverPage(page, genreId) {
     if (!TMDB_API_KEY) return { movies: [], totalPages: 0 };
-    let url = `https://api.themoviedb.org/3/discover/movie?api_key=${TMDB_API_KEY}&language=fr-FR&sort_by=popularity.desc&primary_release_date.gte=${MIN_YEAR}-01-01&primary_release_date.lte=2026-12-31&vote_count.gte=50&page=${page}`;
+    let url = `https://api.themoviedb.org/3/discover/movie?api_key=${TMDB_API_KEY}&language=fr-FR&sort_by=popularity.desc&primary_release_date.gte=${MIN_YEAR}-01-01&primary_release_date.lte=2026-12-31&vote_average.gte=7.0&vote_count.gte=1000&page=${page}`;
     if (genreId) url += `&with_genres=${genreId}`;
 
     try {
@@ -291,7 +293,8 @@ function displayMovie() {
 }
 
 function swipe(direction) {
-    if (currentIndex >= filteredMovies.length) return;
+    if (isSwiping || currentIndex >= filteredMovies.length) return;
+    isSwiping = true;
 
     const movie = filteredMovies[currentIndex];
     saveSwiped(movie.title);
@@ -317,6 +320,7 @@ function swipe(direction) {
     setTimeout(() => {
         currentIndex++;
         displayMovie();
+        setTimeout(() => { isSwiping = false; }, SWIPE_COOLDOWN);
     }, 400);
 }
 
@@ -450,11 +454,26 @@ function showSwipe() {
 // --- SWIPE GESTURES ---
 
 function initSwipe() {
-    const hammer = new Hammer(card);
-    hammer.get("pan").set({ direction: Hammer.DIRECTION_HORIZONTAL });
+    const hammer = new Hammer(card, {
+        touchAction: "pan-y",
+        inputClass: Hammer.TouchMouseInput
+    });
+    hammer.get("pan").set({
+        direction: Hammer.DIRECTION_HORIZONTAL,
+        threshold: 10
+    });
+
+    let isPanning = false;
+
+    hammer.on("panstart", (e) => {
+        if (isSwiping || currentIndex >= filteredMovies.length) return;
+        isPanning = true;
+    });
 
     hammer.on("pan", (e) => {
-        if (currentIndex >= filteredMovies.length) return;
+        if (!isPanning || isSwiping || currentIndex >= filteredMovies.length) return;
+
+        e.preventDefault();
         card.classList.add("swiping");
 
         const maxRotation = 15;
@@ -475,8 +494,11 @@ function initSwipe() {
         }
     });
 
-    hammer.on("panend", (e) => {
-        if (currentIndex >= filteredMovies.length) return;
+    hammer.on("panend pancancel", (e) => {
+        if (!isPanning) return;
+        isPanning = false;
+
+        if (isSwiping || currentIndex >= filteredMovies.length) return;
         card.classList.remove("swiping");
         indicator.textContent = "";
         indicator.classList.remove("like", "dislike");
@@ -488,6 +510,11 @@ function initSwipe() {
         } else {
             card.style.transform = "";
         }
+    });
+
+    // Empêcher le clic "Détails" d'être interprété comme un swipe
+    document.getElementById("btn-details").addEventListener("pointerdown", (e) => {
+        e.stopPropagation();
     });
 }
 
