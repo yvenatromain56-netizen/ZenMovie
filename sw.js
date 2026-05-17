@@ -1,10 +1,11 @@
-const CACHE_NAME = "zenmovie-v3";
+const CACHE_NAME = "zenmovie-v4";
 
 const PRECACHE_URLS = [
     "./",
     "./index.html",
     "./style.css",
     "./config.js",
+    "./couple.js",
     "./app.js",
     "./movies.json",
     "./icon.svg",

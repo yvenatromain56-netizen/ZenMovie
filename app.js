@@ -230,6 +230,9 @@ function swipe(direction) {
         saveWatchlist();
         updateBadge();
 
+        // Send to couple room if active
+        if (currentRoom) sendLikeToRoom(movie);
+
         // Use local rating OR tmdb_rating
         const rating = movie.tmdb_rating || movie.rating || 0;
         const isMatch = rating >= MATCH_RATING_THRESHOLD;
@@ -465,6 +468,44 @@ genreFilters.addEventListener("click", (e) => {
     genreFilters.querySelectorAll(".genre-btn").forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
     applyFilter(btn.dataset.genre);
+});
+
+// --- COUPLE MODE LISTENERS ---
+
+document.getElementById("btn-couple-mode").addEventListener("click", () => {
+    document.getElementById("couple-overlay").classList.remove("hidden");
+});
+
+document.getElementById("btn-close-couple").addEventListener("click", () => {
+    document.getElementById("couple-overlay").classList.add("hidden");
+});
+
+document.getElementById("btn-create-room").addEventListener("click", createRoom);
+
+document.getElementById("btn-join-room").addEventListener("click", () => {
+    const code = document.getElementById("input-room-code").value.trim();
+    joinRoom(code);
+});
+
+document.getElementById("input-room-code").addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        const code = document.getElementById("input-room-code").value.trim();
+        joinRoom(code);
+    }
+});
+
+document.getElementById("btn-leave-room").addEventListener("click", () => {
+    leaveRoom();
+});
+
+document.getElementById("btn-close-couple-match").addEventListener("click", () => {
+    document.getElementById("couple-match-overlay").classList.add("hidden");
+});
+
+document.getElementById("couple-overlay").addEventListener("click", (e) => {
+    if (e.target === document.getElementById("couple-overlay")) {
+        document.getElementById("couple-overlay").classList.add("hidden");
+    }
 });
 
 // --- INIT ---
