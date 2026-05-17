@@ -7,6 +7,7 @@ let filteredMovies = [];
 let currentIndex = 0;
 let activeGenre = "Tous";
 let watchlist = JSON.parse(localStorage.getItem("moviepicker-matches")) || [];
+let swipedTitles = new Set(JSON.parse(localStorage.getItem("moviepicker-swiped")) || []);
 
 const card = document.getElementById("movie-card");
 const poster = document.getElementById("movie-poster");
@@ -29,6 +30,11 @@ const genreFilters = document.getElementById("genre-filters");
 
 function saveWatchlist() {
     localStorage.setItem("moviepicker-matches", JSON.stringify(watchlist));
+}
+
+function saveSwiped(title) {
+    swipedTitles.add(title);
+    localStorage.setItem("moviepicker-swiped", JSON.stringify([...swipedTitles]));
 }
 
 function shuffle(array) {
@@ -174,12 +180,13 @@ function applyFilter(genre) {
     activeGenre = genre;
     currentIndex = 0;
 
-    if (genre === "Tous") {
-        filteredMovies = shuffle([...allMovies]);
-    } else {
-        filteredMovies = shuffle(allMovies.filter((m) => m.genre === genre));
+    let pool = allMovies.filter((m) => !swipedTitles.has(m.title));
+
+    if (genre !== "Tous") {
+        pool = pool.filter((m) => m.genre === genre);
     }
 
+    filteredMovies = shuffle(pool);
     displayMovie();
 }
 
@@ -224,6 +231,7 @@ function swipe(direction) {
     if (currentIndex >= filteredMovies.length) return;
 
     const movie = filteredMovies[currentIndex];
+    saveSwiped(movie.title);
 
     if (direction === "right") {
         watchlist.push(movie);
@@ -468,6 +476,39 @@ genreFilters.addEventListener("click", (e) => {
     genreFilters.querySelectorAll(".genre-btn").forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
     applyFilter(btn.dataset.genre);
+});
+
+// --- RANDOM PICK ---
+
+function pickRandomMovie() {
+    if (watchlist.length === 0) return;
+    const movie = watchlist[Math.floor(Math.random() * watchlist.length)];
+    const overlay = document.getElementById("random-pick-overlay");
+    const posterEl = document.getElementById("random-pick-poster");
+
+    document.getElementById("random-pick-title").textContent = movie.title;
+    document.getElementById("random-pick-meta").textContent = `${movie.year} — ${movie.genre}`;
+    posterEl.src = getPosterUrl(movie);
+
+    // Reset animation
+    posterEl.classList.remove("random-pick-reveal");
+    void posterEl.offsetWidth;
+    posterEl.classList.add("random-pick-reveal");
+
+    overlay.classList.remove("hidden");
+
+    if (navigator.vibrate) navigator.vibrate([20, 40, 20]);
+}
+
+document.getElementById("btn-random-pick").addEventListener("click", pickRandomMovie);
+document.getElementById("btn-random-pick-again").addEventListener("click", pickRandomMovie);
+document.getElementById("btn-random-pick-close").addEventListener("click", () => {
+    document.getElementById("random-pick-overlay").classList.add("hidden");
+});
+document.getElementById("random-pick-overlay").addEventListener("click", (e) => {
+    if (e.target === document.getElementById("random-pick-overlay")) {
+        document.getElementById("random-pick-overlay").classList.add("hidden");
+    }
 });
 
 // --- COUPLE MODE LISTENERS ---

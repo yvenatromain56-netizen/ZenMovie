@@ -104,9 +104,32 @@
                 Retour au swipe
             </button>
         </div>
+        <button id="btn-random-pick" class="w-full mb-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold rounded-xl text-sm flex items-center justify-center gap-2 transition-all shadow-lg shadow-indigo-500/20">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"/></svg>
+            Choisis un film pour ce soir !
+        </button>
         <p id="matches-empty" class="text-gray-500 text-center py-12 hidden">Aucun match pour l'instant. Swipe des films vers la droite !</p>
-        <ul id="matches-list" class="space-y-3 overflow-y-auto max-h-[70vh] pb-4"></ul>
+        <ul id="matches-list" class="space-y-3 overflow-y-auto max-h-[60vh] pb-4"></ul>
     </section>
+
+    <!-- Overlay Film au hasard -->
+    <div id="random-pick-overlay" class="hidden fixed inset-0 z-[100] flex flex-col items-center justify-center">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-md"></div>
+        <div class="relative flex flex-col items-center gap-4 px-6 text-center">
+            <p class="text-gray-400 text-sm uppercase tracking-wide">Ce soir, vous regardez...</p>
+            <img id="random-pick-poster" src="" alt="" class="w-40 h-60 object-cover rounded-2xl shadow-2xl ring-4 ring-indigo-500/50 random-pick-reveal">
+            <h3 id="random-pick-title" class="text-2xl font-bold text-white mt-2"></h3>
+            <p id="random-pick-meta" class="text-gray-400 text-sm"></p>
+            <div class="flex gap-3 mt-4">
+                <button id="btn-random-pick-again" class="px-5 py-2.5 bg-gray-700 hover:bg-gray-600 text-white rounded-full text-sm font-medium transition-colors">
+                    Re-tirer
+                </button>
+                <button id="btn-random-pick-close" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full text-sm font-medium transition-colors">
+                    Parfait !
+                </button>
+            </div>
+        </div>
+    </div>
 
     <!-- Overlay Détails (swipe) -->
     <div id="details-overlay" class="hidden fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">

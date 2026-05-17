@@ -277,6 +277,41 @@ body {
     }
 }
 
+/* === RANDOM PICK ANIMATION === */
+
+.random-pick-reveal {
+    animation: random-reveal 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes random-reveal {
+    0% {
+        transform: rotateY(90deg) scale(0.8);
+        opacity: 0;
+    }
+    60% {
+        transform: rotateY(-5deg) scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: rotateY(0deg) scale(1);
+        opacity: 1;
+    }
+}
+
+#random-pick-overlay h3 {
+    animation: match-fade-up 0.4s ease-out 0.3s both;
+}
+
+#random-pick-overlay p {
+    animation: match-fade-up 0.3s ease-out 0.1s both;
+}
+
+#random-pick-overlay .flex.gap-3 {
+    animation: match-fade-up 0.4s ease-out 0.5s both;
+}
+
+/* === COUPLE MATCH ANIMATION === */
+
 #couple-match-overlay h2 {
     animation: match-zoom-in 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s both;
     background-size: 200% 200%;
