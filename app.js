@@ -405,18 +405,18 @@ let matchesGenreFilter = "Tous";
 
 function getMatchBadge(movie) {
     if (movie.matchType === "couple") {
-        return `<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-pink-500/20 text-pink-400 border border-pink-500/30">COUPLE</span>`;
+        return `<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-pink-500/15 text-pink-400 border border-pink-500/25 shadow-sm shadow-pink-500/10">COUPLE</span>`;
     }
     if (movie.matchType === "match") {
-        return `<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-yellow-500/20 text-yellow-400 border border-yellow-500/30">MATCH</span>`;
+        return `<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-yellow-500/15 text-yellow-400 border border-yellow-500/25 shadow-sm shadow-yellow-500/10">MATCH</span>`;
     }
-    return `<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/30">LIKÉ</span>`;
+    return `<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-green-500/15 text-green-400 border border-green-500/25 shadow-sm shadow-green-500/10">LIKÉ</span>`;
 }
 
 function getMatchBorder(movie) {
-    if (movie.matchType === "couple") return "border-l-4 border-l-pink-500";
-    if (movie.matchType === "match") return "border-l-4 border-l-yellow-500";
-    return "border-l-4 border-l-green-500/50";
+    if (movie.matchType === "couple") return "border-l-[3px] border-l-pink-500/70";
+    if (movie.matchType === "match") return "border-l-[3px] border-l-yellow-500/70";
+    return "border-l-[3px] border-l-green-500/40";
 }
 
 function updateMatchStats() {
@@ -453,17 +453,17 @@ function renderMatches() {
         const globalIndex = watchlist.indexOf(movie);
         const rating = movie.tmdb_rating || movie.rating || 0;
         const li = document.createElement("li");
-        li.className = `match-item flex items-center gap-3 bg-gray-800 rounded-xl p-3 cursor-pointer hover:bg-gray-700 transition-colors ${getMatchBorder(movie)}`;
+        li.className = `match-item flex items-center gap-3 bg-white/[0.03] backdrop-blur-sm rounded-2xl p-3.5 cursor-pointer hover:bg-white/[0.07] transition-all border border-white/5 ${getMatchBorder(movie)}`;
         li.innerHTML = `
-            <img src="${getPosterSmall(movie)}" alt="${movie.title}" class="w-12 h-16 object-cover rounded-lg flex-shrink-0">
+            <img src="${getPosterSmall(movie)}" alt="${movie.title}" class="w-12 h-16 object-cover rounded-xl flex-shrink-0 shadow-md">
             <div class="flex-1 min-w-0">
                 <div class="flex items-center gap-2 mb-0.5">
-                    <p class="text-white font-medium text-sm truncate">${movie.title}</p>
+                    <p class="text-white font-semibold text-sm truncate tracking-tight">${movie.title}</p>
                     ${getMatchBadge(movie)}
                 </div>
-                <p class="text-gray-400 text-xs">${movie.year} — ${movie.genre}${rating ? ` — ${rating.toFixed(1)}/10` : ""}</p>
+                <p class="text-gray-400 text-xs font-medium">${movie.year} — ${movie.genre}${rating ? ` — ${rating.toFixed(1)}/10` : ""}</p>
             </div>
-            <button class="btn-remove flex-shrink-0 w-8 h-8 rounded-full bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white flex items-center justify-center transition-colors" data-index="${globalIndex}">
+            <button class="btn-remove flex-shrink-0 w-8 h-8 rounded-full bg-red-500/10 text-red-400 hover:bg-red-500 hover:text-white flex items-center justify-center transition-all border border-red-500/20 hover:scale-110 active:scale-90" data-index="${globalIndex}">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
             </button>
         `;
